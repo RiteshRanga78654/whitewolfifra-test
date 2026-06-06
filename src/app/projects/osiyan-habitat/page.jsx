@@ -158,13 +158,13 @@ const neighbors = [
   {
     plot: "22",
     name: "Preetam Daniel",
-    image: "/client3.png",
+    image: "/Osiyan Habitat/n1.jpg",
     quote: "For me, the bigger developers had a problem with valuation, the smaller ones had poor infrastructure. I own a plot in Osiyan Habitat and it was true value for money.",
   },
   {
     plot: "94",
     name: "Nirmal Raj",
-    image: "/client2.png",
+    image: "/Osiyan Habitat/n2.jpg",
     quote: "It's easy to acquire property but maintaining it is a big headache. I think this is a good investment because they look after it and protect it.",
   },
 ];

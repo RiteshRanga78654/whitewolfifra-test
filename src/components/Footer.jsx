@@ -65,7 +65,7 @@ const Footer = () => {
         address: "",
       },
       {
-        name: "Gurugram",
+        name: "Tijara",
         href: "",
         address: "Coming Soon",
       },

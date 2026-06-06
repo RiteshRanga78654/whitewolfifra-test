@@ -292,7 +292,7 @@ export default function Navbar() {
     {
       label: 'Projects',
       subItems: [
-        { label: 'Towship', path: '/projects/osiyan-habitat' },
+        { label: 'Township', path: '/projects/osiyan-habitat' },
         { label: 'Low Rise', path: '/projects/ats-sohna-floor' }
       ]
     },
@@ -313,7 +313,7 @@ export default function Navbar() {
   ];
 
   const searchSuggestions = [
-    { label: 'Towship', path: '/projects/osiyan-habitat' },
+    { label: 'Township', path: '/projects/osiyan-habitat' },
     { label: 'ATS Luxury Floors', path: '/projects/ats-sohna-floor' },
     { label: 'Bespoke Creatives', path: '/resources/our-creative' },
     // { label: 'Media Press Coverage', path: '/resources/press-coverage' }
@@ -521,7 +521,7 @@ export default function Navbar() {
                           <div className="p-2 space-y-1">
                             <Link href="/projects/osiyan-habitat" onClick={() => setIsMobileMenuOpen(false)} className="block p-3 rounded-xl hover:bg-white transition-colors">
                               <p className="text-[8px] font-black text-[#293659] uppercase tracking-widest mb-0.5">Premium Plots</p>
-                              <h4 className="text-sm font-bold text-gray-700">Towship</h4>
+                              <h4 className="text-sm font-bold text-gray-700">Township</h4>
                             </Link>
                             <Link href="/projects/ats-sohna-floor" onClick={() => setIsMobileMenuOpen(false)} className="block p-3 rounded-xl hover:bg-white transition-colors">
                               <p className="text-[8px] font-black text-[#293659] uppercase tracking-widest mb-0.5">Luxury Floors</p>

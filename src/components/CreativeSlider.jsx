@@ -379,18 +379,18 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const categories = ['All', 'Towship', 'Low Rise'];
+const categories = ['All', 'Township', 'Low Rise'];
 
 const creatives = [
-  { id: 1, title: "Osiyan Habitat",  category: 'Towship', image: '/assets/creative/1.jpeg' },
-  { id: 2, title: "Osiyan Habitat",  category: 'Towship',    image:  '/assets/creative/2.jpeg' },
-  { id: 3, title: "Osiyan Habitat",  category: 'Towship',     image: '/assets/creative/3.jpeg' },
-  { id: 4, title: "Osiyan Habitat",  category: 'Towship',     image: '/assets/creative/4.jpeg' },
-  { id: 5, title: "Osiyan Habitat",  category: 'Towship', image: '/assets/creative/5.jpeg' },
-  { id: 6, title: "Osiyan Habitat",  category: 'Towship',     image: '/assets/creative/6.jpeg' },
-  { id: 7, title: "Osiyan Habitat",  category: 'Towship',     image: '/assets/creative/7.jpeg' },
-  { id: 8, title: "Osiyan Habitat",  category: 'Towship', image: '/assets/creative/8.jpeg' },
-  { id: 9, title: "Osiyan Habitat",  category: 'Towship',     image: '/assets/creative/9.jpeg' },
+  { id: 1, title: "Osiyan Habitat",  category: 'Township', image: '/assets/creative/1.jpeg' },
+  { id: 2, title: "Osiyan Habitat",  category: 'Township',    image:  '/assets/creative/2.jpeg' },
+  { id: 3, title: "Osiyan Habitat",  category: 'Township',     image: '/assets/creative/3.jpeg' },
+  { id: 4, title: "Osiyan Habitat",  category: 'Township',     image: '/assets/creative/4.jpeg' },
+  { id: 5, title: "Osiyan Habitat",  category: 'Township', image: '/assets/creative/5.jpeg' },
+  { id: 6, title: "Osiyan Habitat",  category: 'Township',     image: '/assets/creative/6.jpeg' },
+  { id: 7, title: "Osiyan Habitat",  category: 'Township',     image: '/assets/creative/7.jpeg' },
+  { id: 8, title: "Osiyan Habitat",  category: 'Township', image: '/assets/creative/8.jpeg' },
+  { id: 9, title: "Osiyan Habitat",  category: 'Township',     image: '/assets/creative/9.jpeg' },
 ];
 
 const downloadImage = (url, filename) => {

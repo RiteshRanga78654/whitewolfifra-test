@@ -8,28 +8,28 @@ import SmoothScroll from '../../../components/SmoothScroll';
 import { Maximize2 } from 'lucide-react';
 
 // Categories for the filter
-const categories = ["All", "Towship", "Low Rise",];
+const categories = ["All", "Township", "Low Rise",];
 
 // Gallery Data
 const galleryItems = [
   {
     id: 1,
     title: "The Glass Pavilion",
-    category: "Towship",
+    category: "Township",
     image: "/Osiyan Habitat/osiyan-habitat-1.png",
     span: "col-span-1 md:col-span-2 row-span-2" // Large feature image
   },
   {
     id: 2,
     title: "Bespoke Living Area",
-    category: "Towship",
+    category: "Township",
     image: "/Osiyan Habitat/osiyan-habitat-2.png",
     span: "col-span-1"
   },
   {
     id: 3,
     title: "Infinity Pool Setup",
-    category: "Towship",
+    category: "Township",
     image: "/Osiyan Habitat/osiyan-habitat-3.png",
     span: "col-span-1"
   },
@@ -70,14 +70,14 @@ const galleryItems = [
   {
     id: 17,
     title: "Private Cinema",
-    category: "Towship",
+    category: "Township",
     image: "/Osiyan Habitat/osiyan-habitat-4.png",
     span: "col-span-1"
   },
   {
     id: 8,
     title: "Master Suite",
-    category: "Towship",
+    category: "Township",
     image: "/Osiyan Habitat/osiyan-habitat-5.png",
     span: "col-span-1"
   },
