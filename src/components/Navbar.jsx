@@ -300,7 +300,7 @@ export default function Navbar() {
       label: 'Resources',
       subItems: [
         { label: 'Our Gallery', path: '/resources/our-gallery' },
-        // { label: 'Our Videos', path: '/resources/our-videos' },
+        { label: 'Our Videos', path: '/resources/our-videos' },
         { label: 'Our Creatives', path: '/resources/our-creative' },
         // { label: 'Press Coverage', path: '/resources/press-coverage' }
       ]
@@ -545,7 +545,7 @@ export default function Navbar() {
                           <div className="p-2 grid grid-cols-1 gap-1">
                             {[
                               { sub: 'Visuals', label: 'Our Gallery', path: '/resources/our-gallery' },
-                              // { sub: 'Motion', label: 'Our Videos', path: '/resources/our-videos' },
+                              { sub: 'Motion', label: 'Our Videos', path: '/resources/our-videos' },
                               { sub: 'Design', label: 'Our Creatives', path: '/resources/our-creative' },
                               // { sub: 'Media', label: 'Press Coverage', path: '/resources/press-coverage' },
                             ].map(r => (

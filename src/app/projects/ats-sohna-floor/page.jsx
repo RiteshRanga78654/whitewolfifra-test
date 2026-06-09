@@ -554,7 +554,7 @@ const ATSSohnaFloors = () => {
                     onClick={() => setIsDownloadModalOpen(true)}
                     className="px-10 py-4 bg-gradient-to-r from-[#253158] to-[#3a4f8a] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all text-lg tracking-wide"
                   >
-                    Download PDF
+                    Download Brochure PDF
                   </button>
                 </div>
               </motion.div>

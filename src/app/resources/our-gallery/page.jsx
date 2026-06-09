@@ -12,13 +12,13 @@ const categories = ["All", "Township", "Low Rise",];
 
 // Gallery Data
 const galleryItems = [
-  {
-    id: 1,
-    title: "The Glass Pavilion",
-    category: "Township",
-    image: "/Osiyan Habitat/osiyan-habitat-1.png",
-    span: "col-span-1 md:col-span-2 row-span-2" // Large feature image
-  },
+  // {
+  //   id: 1,
+  //   title: "The Glass Pavilion",
+  //   category: "Township",
+  //   image: "/Osiyan Habitat/osiyan-habitat-1.png",
+  //   span: "col-span-1 md:col-span-2 row-span-2" // Large feature image
+  // },
   {
     id: 2,
     title: "Bespoke Living Area",
@@ -33,110 +33,90 @@ const galleryItems = [
     image: "/Osiyan Habitat/osiyan-habitat-3.png",
     span: "col-span-1"
   },
-   {
-    id: 12,
-    title: "Zen Garden Walkway",
-    category: "Low Rise",
-    image: "/ATS-Sohna/ats-sohna-1.png",
-    span: "col-span-1 md:col-span-2" // Wide image
-  },
   {
-    id: 13,
-    title: "Master Suite",
-    category: "Low Rise",
-    image: "/ATS-Sohna/ats-sohna-2.png",
-    span: "col-span-1"
-  },  {
-    id: 14,
-    title: "Zen Garden Walkway",
-    category: "Low Rise",
-    image: "/ATS-Sohna/ats-sohna-3.png",
-    span: "col-span-1 md:col-span-2" // Wide image
-  },
-  {
-    id: 15,
-    title: "Master Suite",
-    category: "Low Rise",
-    image: "/ATS-Sohna/ats-sohna-4.png",
-    span: "col-span-1"
-  },
-  {
-    id: 16,
-    title: "Skyline Terrace",
-    category: "Low Rise",
-    image: "/ATS-Sohna/ats-sohna-5.png",
-    span: "col-span-1"
-  },
-  {
-    id: 17,
+    id: 4,
     title: "Private Cinema",
     category: "Township",
     image: "/Osiyan Habitat/osiyan-habitat-4.png",
     span: "col-span-1"
   },
   {
-    id: 8,
+    id: 5,
     title: "Master Suite",
     category: "Township",
     image: "/Osiyan Habitat/osiyan-habitat-5.png",
     span: "col-span-1"
   },
-  {
-    id: 4,
+   {
+    id: 6,
     title: "Zen Garden Walkway",
-    category: "Exteriors",
-    image: "/assets/gallery/Ext4.jpeg",
+    category: "Low Rise",
+    image: "/ATS-Sohna/ats-sohna-1.png",
     span: "col-span-1 md:col-span-2" // Wide image
   },
   {
-    id: 5,
-    title: "Master Suite",
-    category: "Exteriors",
-    image: "/assets/gallery/Ext5.jpeg",
-    span: "col-span-1"
-  },
-  {
-    id: 6,
-    title: "Skyline Terrace",
-    category: "Exteriors",
-    image: "/assets/gallery/Ext6.jpeg",
-    span: "col-span-1"
-  },
-  {
     id: 7,
-    title: "Private Cinema",
-    category: "Exteriors",
-    image: "/assets/gallery/Ext7.jpeg",
-    span: "col-span-1"
-  },
-  {
-    id: 8,
     title: "Master Suite",
-    category: "Exteriors",
-    image: "/assets/gallery/Ext8.jpeg",
+    category: "Low Rise",
+    image: "/ATS-Sohna/ats-sohna-2.png",
     span: "col-span-1"
+  },  {
+    id: 8,
+    title: "Zen Garden Walkway",
+    category: "Low Rise",
+    image: "/ATS-Sohna/ats-sohna-3.png",
+    span: "col-span-1 md:col-span-2" // Wide image
   },
   {
     id: 9,
-    title: "Skyline Terrace",
-    category: "Exteriors",
-    image: "/assets/gallery/Ext9.jpeg",
+    title: "Master Suite",
+    category: "Low Rise",
+    image: "/ATS-Sohna/ats-sohna-4.png",
     span: "col-span-1"
   },
   {
     id: 10,
-    title: "Private Cinema",
-    category: "Exteriors",
-    image: "/assets/gallery/WhatsApp Image 2026-05-22 at 3.51.52 AM.jpeg",
+    title: "Skyline Terrace",
+    category: "Low Rise",
+    image: "/ATS-Sohna/ats-sohna-5.png",
     span: "col-span-1"
   },
    {
     id: 11,
-    title: "Private Cinema",
-    category: "Exteriors",
-    image: "/assets/gallery/WhatsApp Image 2026-05-22 at 3.30.19 AM.jpeg",
+    title: "Master Suite",
+    category: "Township",
+    image: "/assets/gallery/township1.jpeg",
     span: "col-span-1"
   },
+   {
+    id: 12,
+    title: "Master Suite",
+    category: "Township",
+    image: "/assets/gallery/township2.jpeg",
+    span: "col-span-1"
+  },
+   {
+    id: 13,
+    title: "Master Suite",
+    category: "Township",
+    image: "/assets/gallery/township3.jpeg",
+    span: "col-span-1"
+  },
+   {
+    id: 14,
+    title: "Master Suite",
+    category: "Township",
+    image: "/assets/gallery/township4.jpeg",
+    span: "col-span-1"
+  },
+   {
+    id: 15,
+    title: "Master Suite",
+    category: "Township",
+    image: "/assets/gallery/township5.jpeg",
+    span: "col-span-1"
+  },
+  
 ];
 
 export default function Gallery() {

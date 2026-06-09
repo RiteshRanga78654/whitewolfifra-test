@@ -41,25 +41,25 @@ const images = [
 ];
 
 const plotData = [
-  { plotNo: "1", size: "166.378 Sq. Yrds", sqft: "NA", facing: "North East" },
-  { plotNo: "2-8", size: "121.992 Sq. Yrds", sqft: "NA", facing: "North East" },
-  { plotNo: "9", size: "151.037 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
-  { plotNo: "10-20", size: "134.267 Sq. Yrds", sqft: "NA", facing: "South East" },
-  { plotNo: "21", size: "124.748 Sq. Yrds", sqft: "NA", facing: "South East" },
-  { plotNo: "22", size: "105.686 Sq. Yrds", sqft: "NA", facing: "South East" },
-  { plotNo: "23-32", size: "126.628 Sq. Yrds", sqft: "NA", facing: "North" },
-  { plotNo: "33", size: "145.235 Sq. Yrds", sqft: "NA", facing: "SE Corner" },
-  { plotNo: "34-48", size: "145.235 Sq. Yrds", sqft: "NA", facing: "East" },
-  { plotNo: "49", size: "145.235 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
-  { plotNo: "50", size: "145.235 Sq. Yrds", sqft: "NA", facing: "NW Corner" },
-  { plotNo: "51-65", size: "145.235 Sq. Yrds", sqft: "NA", facing: "West" },
-  { plotNo: "66", size: "145.235 Sq. Yrds", sqft: "NA", facing: "SW Corner" },
-  { plotNo: "67", size: "145.235 Sq. Yrds", sqft: "NA", facing: "SE Corner" },
-  { plotNo: "68-82", size: "145.235 Sq. Yrds", sqft: "NA", facing: "East" },
-  { plotNo: "83", size: "145.235 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
-  { plotNo: "84", size: "154.357 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
-  { plotNo: "85-93", size: "154.357 Sq. Yrds", sqft: "NA", facing: "North" },
-  { plotNo: "94", size: "154.357 Sq. Yrds", sqft: "NA", facing: "NW Corner" },
+  { plotNo: "1", size: "166 Sq. Yrds", sqft: "NA", facing: "North East" },
+  { plotNo: "2-8", size: "121 Sq. Yrds", sqft: "NA", facing: "North East" },
+  { plotNo: "9", size: "151 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
+  { plotNo: "10-20", size: "134 Sq. Yrds", sqft: "NA", facing: "South East" },
+  { plotNo: "21", size: "124 Sq. Yrds", sqft: "NA", facing: "South East" },
+  { plotNo: "22", size: "105 Sq. Yrds", sqft: "NA", facing: "South East" },
+  { plotNo: "23-32", size: "126 Sq. Yrds", sqft: "NA", facing: "North" },
+  { plotNo: "33", size: "145 Sq. Yrds", sqft: "NA", facing: "SE Corner" },
+  { plotNo: "34-48", size: "145 Sq. Yrds", sqft: "NA", facing: "East" },
+  { plotNo: "49", size: "145 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
+  { plotNo: "50", size: "145 Sq. Yrds", sqft: "NA", facing: "NW Corner" },
+  { plotNo: "51-65", size: "145 Sq. Yrds", sqft: "NA", facing: "West" },
+  { plotNo: "66", size: "145 Sq. Yrds", sqft: "NA", facing: "SW Corner" },
+  { plotNo: "67", size: "145 Sq. Yrds", sqft: "NA", facing: "SE Corner" },
+  { plotNo: "68-82", size: "145 Sq. Yrds", sqft: "NA", facing: "East" },
+  { plotNo: "83", size: "145 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
+  { plotNo: "84", size: "154 Sq. Yrds", sqft: "NA", facing: "NE Corner" },
+  { plotNo: "85-93", size: "154 Sq. Yrds", sqft: "NA", facing: "North" },
+  { plotNo: "94", size: "154 Sq. Yrds", sqft: "NA", facing: "NW Corner" },
 ];
 
 const amenities = [
@@ -646,7 +646,7 @@ const OsiyanHabitat = () => {
                     onClick={() => setIsDownloadModalOpen(true)}
                     className="px-10 py-4 bg-gradient-to-r from-[#a54d21] to-[#c8a96b] text-white font-bold rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all text-lg tracking-wide"
                   >
-                    Download PDF
+                    Download Brochure PDF
                   </button>
                 </div>
               </motion.div>
@@ -984,117 +984,123 @@ const OsiyanHabitat = () => {
         {/* CONNECTIVITY / GATEWAY TO MODERN LIVING */}
         <section className="relative bg-white py-20 md:py-32 px-4 md:px-6 overflow-visible border-t border-gray-100">
           <div className="max-w-7xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.98 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative z-0 rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl border border-gray-200 group"
-            >
-              <div className="absolute inset-0 bg-[#a54d21]/10 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none" />
-              <img
-                src="/Osiyan Habitat/osiyan-habitat-3.png"
-                alt="Regional Connectivity Map"
-                className="w-full h-[500px] md:h-[650px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
-              />
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, scale: 0.98 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    className="relative z-0 rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl border border-gray-200 group"
+  >
+    {/* Overlay color that fades on hover */}
+    <div className="absolute inset-0 bg-[#a54d21]/10 group-hover:bg-transparent transition-colors duration-700 z-10 pointer-events-none" />
+    
+    {/* Swapped img for video with matching design tokens */}
+    <video
+      src="/assets/videos/second_aerial_cinematic_vid.mp4" 
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="w-full h-[500px] md:h-[650px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
+    />
+  </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="relative z-20 -mt-24 md:-mt-32 mx-auto max-w-6xl px-4"
-            >
-              <div className="bg-white rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.15)] p-8 md:p-12 border border-gray-200">
-                <div className="text-center md:text-left mb-8">
-                  <h3 className="text-gray-900 text-3xl font-Condensed font-bold tracking-wide">
-                    Instant Registration Inquiry
-                  </h3>
-                  <p className="text-[#a54d21] text-[10px] font-bold tracking-[0.3em] uppercase mt-2">
-                    Approved by all major banks for loans
-                  </p>
-                </div>
-                <form className="grid grid-cols-1 md:grid-cols-4 gap-8 items-end">
-                  <div className="relative group/input">
-                    <input
-                      type="text"
-                      required
-                      className="peer w-full bg-transparent border-b-2 border-gray-200 py-3 text-gray-900 focus:outline-none focus:border-[#a54d21] transition-all placeholder-transparent font-medium"
-                      id="name"
-                      placeholder="Name"
-                    />
-                    <label className="absolute left-0 -top-3.5 text-[#a54d21] text-xs font-bold tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#a54d21] peer-focus:text-xs">
-                      Full Name
-                    </label>
-                  </div>
-                  <div className="relative group/input">
-                    <input
-                      type="tel"
-                      required
-                      className="peer w-full bg-transparent border-b-2 border-gray-200 py-3 text-gray-900 focus:outline-none focus:border-[#a54d21] transition-all placeholder-transparent font-medium"
-                      id="phone"
-                      placeholder="Phone"
-                    />
-                    <label className="absolute left-0 -top-3.5 text-[#a54d21] text-xs font-bold tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#a54d21] peer-focus:text-xs">
-                      Mobile Number
-                    </label>
-                  </div>
-                  <div className="relative group/input">
-                    <select className="peer w-full bg-transparent border-b-2 border-gray-200 py-3 text-gray-900 focus:outline-none focus:border-[#a54d21] transition-all appearance-none cursor-pointer font-medium">
-                      <option value="1200">105 - 130 sq.yrd</option>
-                      <option value="2400">130 - 166 sq.yrd</option>
-                    </select>
-                    <label className="absolute left-0 -top-3.5 text-[#a54d21] text-xs font-bold tracking-widest">
-                      Plot Dimension
-                    </label>
-                  </div>
-                  <div>
-                    <button className="w-full py-4 bg-gradient-to-r from-[#a54d21] to-[#c8a96b] text-white font-bold rounded-xl tracking-widest text-sm hover:shadow-xl transition-all">
-                      Secure Plot
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.2 }}
+    className="relative z-20 -mt-24 md:-mt-32 mx-auto max-w-6xl px-4"
+  >
+    <div className="bg-white rounded-3xl shadow-[0_30px_60px_rgba(0,0,0,0.15)] p-8 md:p-12 border border-gray-200">
+      <div className="text-center md:text-left mb-8">
+        <h3 className="text-gray-900 text-3xl font-Condensed font-bold tracking-wide">
+          Instant Registration Inquiry
+        </h3>
+        <p className="text-[#a54d21] text-[10px] font-bold tracking-[0.3em] uppercase mt-2">
+          Approved by all major banks for loans
+        </p>
+      </div>
+      <form className="grid grid-cols-1 md:grid-cols-4 gap-8 items-end">
+        <div className="relative group/input">
+          <input
+            type="text"
+            required
+            className="peer w-full bg-transparent border-b-2 border-gray-200 py-3 text-gray-900 focus:outline-none focus:border-[#a54d21] transition-all placeholder-transparent font-medium"
+            id="name"
+            placeholder="Name"
+          />
+          <label className="absolute left-0 -top-3.5 text-[#a54d21] text-xs font-bold tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#a54d21] peer-focus:text-xs">
+            Full Name
+          </label>
+        </div>
+        <div className="relative group/input">
+          <input
+            type="tel"
+            required
+            className="peer w-full bg-transparent border-b-2 border-gray-200 py-3 text-gray-900 focus:outline-none focus:border-[#a54d21] transition-all placeholder-transparent font-medium"
+            id="phone"
+            placeholder="Phone"
+          />
+          <label className="absolute left-0 -top-3.5 text-[#a54d21] text-xs font-bold tracking-widest transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#a54d21] peer-focus:text-xs">
+            Mobile Number
+          </label>
+        </div>
+        <div className="relative group/input">
+          <select className="peer w-full bg-transparent border-b-2 border-gray-200 py-3 text-gray-900 focus:outline-none focus:border-[#a54d21] transition-all appearance-none cursor-pointer font-medium">
+            <option value="1200">105 - 130 sq.yrd</option>
+            <option value="2400">130 - 166 sq.yrd</option>
+          </select>
+          <label className="absolute left-0 -top-3.5 text-[#a54d21] text-xs font-bold tracking-widest">
+            Plot Dimension
+          </label>
+        </div>
+        <div>
+          <button className="w-full py-4 bg-gradient-to-r from-[#a54d21] to-[#c8a96b] text-white font-bold rounded-xl tracking-widest text-sm hover:shadow-xl transition-all">
+            Secure Plot
+          </button>
+        </div>
+      </form>
+    </div>
+  </motion.div>
 
-            <div className="mt-20 md:mt-32 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="lg:col-span-5 space-y-10 sticky top-32"
-              >
-                <h2 className="text-5xl md:text-7xl font-bold font-Condensed text-gray-900 leading-[1.1]">
-                  Gateway to <br />
-                  <span className="text-[#a54d21]">Modern Living.</span>
-                </h2>
-                <p className="text-stone-600 font-medium text-xl leading-relaxed">
-                  Perfectly positioned in Sector 27, Jhajjar, Osiyan Habitat offers an exceptional opportunity to experience premium villa plots with modern amenities in a rapidly developing growth corridor.
-                </p>
-              </motion.div>
+  <div className="mt-20 md:mt-32 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+    <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="lg:col-span-5 space-y-10 sticky top-32"
+    >
+      <h2 className="text-5xl md:text-7xl font-bold font-Condensed text-gray-900 leading-[1.1]">
+        Gateway to <br />
+        <span className="text-[#a54d21]">Modern Living.</span>
+      </h2>
+      <p className="text-stone-600 font-medium text-xl leading-relaxed">
+        Perfectly positioned in Sector 27, Jhajjar, Osiyan Habitat offers an exceptional opportunity to experience premium villa plots with modern amenities in a rapidly developing growth corridor.
+      </p>
+    </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="lg:col-span-7"
-              >
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  {landmarkData.map((item, index) => (
-                    <motion.div
-                      key={index}
-                      whileHover={{ y: -5 }}
-                      className="p-8 bg-[#f7f3ed] rounded-3xl border border-[#c8a96b]/30 shadow-sm hover:shadow-md transition-all group"
-                    >
-                      <div className="h-1 w-12 bg-[#a54d21] mb-6 group-hover:w-full transition-all duration-500 rounded-full"></div>
-                      <h4 className="text-gray-900 font-bold text-lg mb-2">{item.name}</h4>
-                      <p className="text-stone-600 font-medium">{item.type} • {item.distance}</p>
-                    </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-          </div>
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="lg:col-span-7"
+    >
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {landmarkData.map((item, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ y: -5 }}
+            className="p-8 bg-[#f7f3ed] rounded-3xl border border-[#c8a96b]/30 shadow-sm hover:shadow-md transition-all group"
+          >
+            <div className="h-1 w-12 bg-[#a54d21] mb-6 group-hover:w-full transition-all duration-500 rounded-full"></div>
+            <h4 className="text-gray-900 font-bold text-lg mb-2">{item.name}</h4>
+            <p className="text-stone-600 font-medium">{item.type} • {item.distance}</p>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  </div>
+</div>
         </section>
 
         {/* FAQs */}
