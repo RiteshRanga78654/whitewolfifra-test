@@ -7,12 +7,10 @@ import { FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 
 const TEAM = [
-      {
-    name: "Mr. Bhaswar Paul",
+  {
+    name: "Bhaswar Paul",
     title: "Strategic Advisor – Branding, Marketing & Project Conceptualization",
-    photo: "/assets/leadership/bhaswar.jpg",
-    // linkedin:
-    //   "https://www.linkedin.com/in/vivekyadav?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    photo: "/assets/leadership/Bhaswar_Paul_1.png",
     bio: `Mr. Bhaswar Paul is a seasoned real estate professional, a distinguished real estate strategist with over three decades of experience in driving transformative projects across residential, commercial, leisure and retail sectors. An author, coach, trainer and an entrepreneur, Bhaswar is the Founder & CEO of IREED India, one of India's leading real estate education and industry development platforms. 
 
 Bhaswar has led high impact projects, leveraging his expertise in opportunity identification, project feasibility, and execution. With extensive experience in branding, marketing, sales strategy, and business development, he has played a pivotal role in shaping successful real estate ventures across the country.
@@ -24,11 +22,9 @@ For Osiyan Habitat, Bhaswar brings his expertise in branding, concept developmen
 `,
   },
   {
-    name: "Mr. Rohan Vimal",
-    title: "Building Upon a Legacy of Excellence",
+    name: "Rohan Vimal",
+    title: "Building Upon a Legacy of Excellence, Integrity, and Lasting Value",
     photo: "/assets/leadership/Rohan.png",
-    // linkedin:
-    //   "https://www.linkedin.com/in/bhaswarpaul?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     bio: `Mr. Rohan Vimal: Building Upon a Legacy of Excellence, an Engineering graduate in Civil Engineering from the prestigious Delhi College of Engineering, has demonstrated remarkable growth and achievement throughout his professional journey. With a strong technical foundation and an inherent passion for the built environment, he represents a new generation of real estate professionals committed to creating enduring value.
 
 His interest in real estate and infrastructure was nurtured from an early age. Growing up, he was deeply influenced by his father, Mr. Shashi Shekhar Vimal, who played a significant role in the infrastructural development of the prominent residential and commercial hub of Shivalik, Malviya Nagar, New Delhi. Observing these developments firsthand provided Rohan with invaluable insights into the principles of quality construction, meticulous planning, and customer centric development.
@@ -37,12 +33,10 @@ Throughout his formative years, he was immersed in an environment where real est
 
 Today, he continues to carry forward his family's legacy with a steadfast commitment to service excellence, quality craftsmanship, and customer satisfaction. By combining technical expertise with a deep understanding of client needs, he strives to contribute meaningfully to the development of sustainable and vibrant communities while maintaining the highest standards of professional integrity.`,
   },
-      {
-    name: "Mr. Vivek Yadav",
+  {
+    name: "Vivek Yadav",
     title: "Carrying Forward a Legacy of Vision and Value Creation",
     photo: "/assets/leadership/vivek-yadav.jpeg",
-    // linkedin:
-    //   "https://www.linkedin.com/in/vivekyadav?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     bio: `Today, the third generation of leadership is represented by Mr. Vivek Yadav, who carries forward the impactful vision and values established by his predecessors. An alumnus of the Berlin School of Economics and Law, Germany, and the University of Salford, United Kingdom, he brings a unique blend of global education, entrepreneurial thinking, and a deep commitment to community development.
 
 While inheriting a rich legacy of educational excellence and social contribution, Mr. Vivek Yadav has charted his own path in the field of real estate development. Driven by a passion for value creation and sustainable community growth, he envisioned residential developments that go beyond conventional housing to create enduring assets for families and future generations. His exposure to international best practices in Germany and the United Kingdom has shaped his understanding of urban living, design efficiency, sustainability, and community-centric development. Drawing upon these experiences, he has sought to conceptualize and develop living spaces that offer not merely homes, but an enhanced quality of life, fostering well-being, connectivity, and long-term value for residents.
@@ -87,10 +81,7 @@ export default function LeadershipTeam() {
         HEADER_OFFSET;
       const distance = Math.abs(window.scrollY - top);
       if (distance > 10) {
-        window.scrollTo({
-          top,
-          behavior: "smooth",
-        });
+        window.scrollTo({ top, behavior: "smooth" });
       }
     }
 
@@ -129,12 +120,8 @@ export default function LeadershipTeam() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <p className="text-brand-primary font-bold uppercase tracking-[0.2em] text-sm mb-2">
-           A TEAM WITH EXPERIENCE AND VISION
+            A TEAM WITH EXPERIENCE AND VISION
           </p>
-          {/* <h2 className="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter uppercase mb-6 leading-[0.9]">
-            IREED <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#293659] to-brand-primary">Team</span>
-          </h2> */}
-          {/* <div className="w-16 h-1 bg-brand-primary mx-auto mb-8 rounded" /> */}
         </motion.div>
       </div>
 
@@ -158,7 +145,7 @@ export default function LeadershipTeam() {
                 }
               }}
             >
-              <div className="relative w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] aspect-[3/4] overflow-hidden rounded-md border-[1.5px] border-white/70 shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="relative w-full max-w-[320px] sm:max-w-[320px] md:max-w-[350px] aspect-[3/4] overflow-hidden rounded-md border-[1.5px] border-white/70 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <LinkedInBadge url={p.linkedin} />
                 <Image
                   src={p.photo}
@@ -169,10 +156,13 @@ export default function LeadershipTeam() {
                   priority={i === 0}
                 />
               </div>
-              <h3 className="mt-4 md:mt-5 text-xl font-bold text-gray-900 uppercase tracking-tight tracking-wide text-center px-2 transition-colors duration-300 group-hover:text-brand-primary">
+              <h3
+                className="mt-6 text-[16px] md:text-[1.6rem] font-bold tracking-tight text-gray-900 leading-tight text-center px-2 transition-colors duration-300 group-hover:text-brand-primary"
+                style={{ fontFamily: "'Georgia', serif" }}
+              >
                 {p.name}
               </h3>
-              <p className="text-sm md:text-base text-gray-500 font-medium uppercase tracking-wider text-center px-2 mt-1">
+              <p className="text-sm md:text-base text-gray-500 font-medium tracking-wider text-center px-2 mt-2">
                 {p.title}
               </p>
             </article>
@@ -185,7 +175,7 @@ export default function LeadershipTeam() {
             ref={panelRef}
             className="relative mt-12 overflow-hidden rounded-lg flex flex-col lg:flex-row scroll-mt-20 sm:scroll-mt-32 md:scroll-mt-40 w-full shadow-2xl border border-gray-100 bg-gray-50"
           >
-            {/* Action Buttons */}
+            {/* Close Button */}
             <button
               onClick={() => setIdx(null)}
               className="absolute top-4 right-4 z-20 text-2xl text-gray-700 hover:text-gray-900 transition-colors p-2 rounded-full bg-white/80 hover:bg-white shadow-sm"
@@ -194,25 +184,7 @@ export default function LeadershipTeam() {
               <FiX />
             </button>
 
-            {/* Mobile Nav Elements */}
-            <div className="flex lg:hidden justify-between items-center absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 space-x-4">
-              <button
-                onClick={prev}
-                aria-label="Previous"
-                className="flex items-center justify-center w-10 h-10 bg-black/70 text-white rounded-full hover:bg-black transition-colors shadow-md"
-              >
-                <FiChevronLeft size={20} />
-              </button>
-              <button
-                onClick={next}
-                aria-label="Next"
-                className="flex items-center justify-center w-10 h-10 bg-black/70 text-white rounded-full hover:bg-black transition-colors shadow-md"
-              >
-                <FiChevronRight size={20} />
-              </button>
-            </div>
-
-            {/* Desktop Nav Elements */}
+            {/* Desktop Nav Arrows */}
             <button
               onClick={prev}
               aria-label="Previous"
@@ -238,20 +210,53 @@ export default function LeadershipTeam() {
                 exit="exit"
                 className="flex flex-col lg:flex-row w-full"
               >
-                {/* Panel Image Container */}
-                <div className="relative lg:basis-[35%] w-full h-72 sm:h-96 lg:h-auto lg:min-h-[500px] lg:max-w-[380px]">
+                {/* ── MOBILE: natural aspect-ratio image (no crop) ── */}
+                <div className="lg:hidden relative w-full">
+                  {/* aspect-[3/4] lets the full portrait show without cutting */}
+                  <div className="relative w-full aspect-[3/4]">
+                    <LinkedInBadge url={TEAM[idx].linkedin} />
+                    <Image
+                      src={TEAM[idx].photo}
+                      alt={TEAM[idx].name}
+                      fill
+                      sizes="100vw"
+                      className="object-contain object-top bg-gray-100"
+                    />
+                  </div>
+
+                  {/* Mobile nav arrows — sit just below the image */}
+                  <div className="flex justify-center gap-4 py-3 bg-white">
+                    <button
+                      onClick={prev}
+                      aria-label="Previous"
+                      className="flex items-center justify-center w-10 h-10 bg-black/70 text-white rounded-full hover:bg-black transition-colors shadow-md"
+                    >
+                      <FiChevronLeft size={20} />
+                    </button>
+                    <button
+                      onClick={next}
+                      aria-label="Next"
+                      className="flex items-center justify-center w-10 h-10 bg-black/70 text-white rounded-full hover:bg-black transition-colors shadow-md"
+                    >
+                      <FiChevronRight size={20} />
+                    </button>
+                  </div>
+                </div>
+
+                {/* ── DESKTOP: fixed-width sidebar image (original behaviour) ── */}
+                <div className="hidden lg:block relative lg:basis-[35%] lg:min-h-[500px] lg:max-w-[500px]">
                   <LinkedInBadge url={TEAM[idx].linkedin} />
                   <Image
                     src={TEAM[idx].photo}
                     alt={TEAM[idx].name}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 35vw"
+                    sizes="35vw"
                     className="object-cover"
                   />
                 </div>
 
-                {/* Panel Text Elements */}
-                <div className="w-full lg:basis-[65%] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center pb-20 lg:pb-12 bg-white">
+                {/* Panel Text */}
+                <div className="w-full lg:basis-[65%] p-6 sm:p-8 md:p-10 lg:p-12 flex flex-col justify-center bg-white">
                   <h3 className="text-3xl lg:text-4xl font-black text-gray-900 uppercase tracking-tighter leading-tight">
                     {TEAM[idx].name}
                   </h3>

@@ -77,7 +77,7 @@ const amenities = [
 
 const highlights = [
   "DDJAY Approved Project",
-  "Developer Linked Payment Plan (DLPP)",
+  "Development Linked Payment Plan (DLPP)",
   "Transparent Payment Structure",
   "Investor Friendly Development",
   "Smart Location with Strong Future Growth",
@@ -93,7 +93,7 @@ const whyInvest = [
     desc: "Government-approved projects offer better legal security and smoother ownership processes.",
   },
   {
-    title: "Developer Linked Payment Plan",
+    title: "Development Linked Payment Plan",
     desc: "Payments are linked with actual development progress, ensuring higher transparency.",
   },
   {
@@ -128,7 +128,7 @@ const faqs = [
     a: "Yes, the project is DDJAY approved, ensuring better legal transparency and secure ownership.",
   },
   {
-    q: "What makes the Developer Linked Payment Plan (DLPP) beneficial?",
+    q: "What makes the Development Linked Payment Plan (DLPP) beneficial?",
     a: "The DLPP structure links payments directly with construction progress, reducing upfront financial burden.",
   },
   {
@@ -146,13 +146,13 @@ const faqs = [
 ];
 
 const landmarkData = [
-  { name: "Delhi Public School Jhajjar", distance: "26 KM", type: "School" },
-  { name: "AIIMS Jhajjar", distance: "27 KM", type: "Hospital" },
-  { name: "State Bank of India (SBI)", distance: "4.4 KM", type: "Bank" },
   { name: "Local Retail Markets", distance: "2-4 KM", type: "Shopping" },
   { name: "Town Park Jhajjar", distance: "4.3 KM", type: "Park" },
+  { name: "State Bank of India (SBI)", distance: "4.4 KM", type: "Bank" },
   { name: "Civil Hospital Jhajjar", distance: "6.9 KM", type: "Hospital" },
-];
+  { name: "Delhi Public School Jhajjar", distance: "26 KM", type: "School" },
+  { name: "AIIMS Jhajjar", distance: "27 KM", type: "Hospital" },
+  ];
 
 const neighbors = [
   {
@@ -386,7 +386,7 @@ const OsiyanHabitat = () => {
           background: "linear-gradient(135deg, #f7f3ed 0%, #faf8f5 50%, #f0ebd8 100%)",
         }}
       >
-        <div className="absolute top-0 left-0 w-full z-[100] transform-gpu">
+        <div className="fixed top-0 left-0 w-full z-[100] transform-gpu">
           <Navbar />
         </div>
 

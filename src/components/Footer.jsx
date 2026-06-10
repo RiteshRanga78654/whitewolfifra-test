@@ -67,7 +67,7 @@ const Footer = () => {
       {
         name: "Tijara",
         href: "",
-        address: "Coming Soon",
+        address: "",
       },
     ],
   };

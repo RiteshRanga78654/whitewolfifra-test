@@ -7,13 +7,17 @@ import Footer from "../../../components/Footer";
 import LeadershipTeam from "../../../components/LeadershipTeam";
 import SmoothScroll from "../../../components/SmoothScroll";
 import { Quote, ArrowRight, Award, Globe, Users } from "lucide-react";
+const journeyImages = [
+  "/assets/acme.png",
+
+];
 
 /* ── DATA ─────────────────────────────────────────────────────── */
 const leaders = [
   {
     id: 1,
     category: "A Visionary Educationist and Social Reformer",
-    specialty: "Vision & Strategy",
+    specialty: "Purpose",
     name: "Shri Rampat Yadav",
     role: "Founder & Visionary",
     linkedin: null,
@@ -38,7 +42,7 @@ Shri Rampat Yadav's life stands as a shining example of how dedication, integrit
   {
     id: 2,
     category: "Governance & Leadership",
-    specialty: "Academic Excellence",
+    specialty: "Vision & Strategy",
     name: "Ashok Yadav",
     role: "Founder & Chairman",
     linkedin: null,
@@ -463,6 +467,15 @@ function LeaderCard({ leader, index, onOpen }) {
 /* ── PAGE ─────────────────────────────────────────────────────── */
 export default function Leadership() {
   const [active, setActive] = useState(null);
+  const [currentJourneyIndex, setCurrentJourneyIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentJourneyIndex((prev) => (prev + 1) % journeyImages.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <SmoothScroll>
@@ -720,19 +733,53 @@ export default function Leadership() {
               </div>
 
               {/* Image */}
-              <div className="lg:col-span-5 w-full order-1 lg:order-2">
+              <div className="lg:col-span-5 w-full order-1 lg:order-2 flex justify-center">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95, y: 30 }}
                   whileInView={{ opacity: 1, scale: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.6, ease: "easeOut" }}
-                  className="group relative overflow-hidden rounded-2xl w-full aspect-video lg:aspect-auto lg:h-[480px]"
+                  className="relative w-full max-w-md mx-auto group"
                 >
-                  <img
-                    src="/assets/acme.png"
-                    alt="Acme International Journey"
-                    className="absolute inset-0 w-full h-full p-4 object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
+                  {/* <div className="absolute -top-8 left-0 text-[10px] tracking-[0.3em] text-[#293659] font-bold uppercase">
+                    Our Journey — Auto Playing
+                  </div> */}
+
+                  <div className="relative aspect-[4/5] w-full flex items-center justify-center">
+                    <AnimatePresence mode="wait">
+                      <motion.img
+                        key={currentJourneyIndex}
+                        src={journeyImages[currentJourneyIndex]}
+                        alt="Acme Journey"
+                        initial={{ opacity: 0, x: 100, rotate: 10 }}
+                        animate={{ opacity: 1, x: 0, rotate: -2 }}
+                        exit={{ opacity: 0, x: -100, rotate: -10 }}
+                        transition={{
+                          duration: 0.8,
+                          ease: [0.4, 0, 0.2, 1],
+                        }}
+                        className="absolute w-full h-full object-cover rounded-3xl shadow-2xl border-4 border-white"
+                      />
+                    </AnimatePresence>
+
+                    <div className="absolute inset-0 bg-[#293659]/20 -z-10 translate-x-3 translate-y-3 rounded-3xl rotate-2" />
+
+                    <div className="absolute inset-0 bg-[#293659]/10 -z-20 translate-x-6 translate-y-6 rounded-3xl -rotate-2" />
+                  </div>
+
+                  <div className="flex justify-center gap-2 mt-6">
+                    {journeyImages.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentJourneyIndex(index)}
+                        className={`transition-all duration-300 rounded-full ${
+                          currentJourneyIndex === index
+                            ? "w-8 h-2 bg-[#293659]"
+                            : "w-2 h-2 bg-gray-300"
+                        }`}
+                      />
+                    ))}
+                  </div>
                 </motion.div>
               </div>
             </div>

@@ -100,11 +100,11 @@ const whyInvest = [
 
 const faqs = [
   {
-    q: "What makes ATS Sohna Floors a strong investment opportunity?",
+    q: "What makes Ornate Floor a strong investment opportunity?",
     a: "Its strategic location, rapid infrastructure growth, and rising demand for low-rise luxury living make it a high-potential investment.",
   },
   {
-    q: "How is the connectivity of ATS Sohna Floors beneficial?",
+    q: "How is the connectivity of Ornate Floor beneficial?",
     a: "The project offers seamless access to Gurgaon, Delhi-Mumbai Expressway, and major NCR corridors, ensuring convenient daily commuting.",
   },
   {
@@ -118,13 +118,13 @@ const faqs = [
 ];
 
 const landmarkData = [
-  { name: "GD Goenka World School", distance: "7.3 KM", type: "School" },
-  { name: "Medanta Medicity", distance: "19 KM", type: "Hospital" },
-  { name: "HDFC Bank", distance: "5.8 KM", type: "Bank" },
-  { name: "Airia Mall", distance: "11 KM", type: "Shopping" },
-  { name: "Aravalli Green Belt", distance: "Adjacent", type: "Park" },
   { name: "KR Mangalam University", distance: "3.1 KM", type: "School" },
-];
+  { name: "HDFC Bank", distance: "5.8 KM", type: "Bank" },
+  { name: "GD Goenka World School", distance: "7.3 KM", type: "School" },
+  { name: "Airia Mall", distance: "11 KM", type: "Shopping" },
+  { name: "Medanta Medicity", distance: "19 KM", type: "Hospital" },
+  { name: "Aravalli Green Belt", distance: "Adjacent", type: "Park" },
+  ];
 
 // --- COMPONENTS ---
 function useIsMobile() {
@@ -297,7 +297,7 @@ const ATSSohnaFloors = () => {
           background: "linear-gradient(135deg, #eef2ff 0%, #f5f3ff 40%, #e8f4fd 100%)",
         }}
       >
-        <div className="absolute top-0 left-0 w-full z-[100] transform-gpu">
+        <div className="fixed top-0 left-0 w-full z-[100] transform-gpu">
           <Navbar />
         </div>
 
@@ -388,7 +388,7 @@ const ATSSohnaFloors = () => {
               </div>
               
               <div className="flex-1 flex flex-col items-center justify-center py-5 px-4 hover:bg-gray-50 transition-colors w-1/2 sm:w-auto">
-                <span className="font-bold text-3xl md:text-4xl text-[#253158] mb-1 tracking-tight">ATS <span className="text-xl md:text-2xl text-slate-500">Group</span></span>
+                <span className="font-bold text-3xl md:text-2xl text-[#253158] mb-1 tracking-tight">White Wolf Infra<span className="text-xl md:text-2xl text-slate-500"></span></span>
                 <span className="text-[10px] md:text-[11px] font-bold tracking-[0.15em] uppercase text-slate-400">Developer</span>
               </div>
               
@@ -422,7 +422,7 @@ const ATSSohnaFloors = () => {
               <div className="w-20 h-1 bg-[#253158] mb-8"></div>
               <div className="space-y-6">
                 <p className="text-xl md:text-2xl font-medium leading-relaxed text-slate-700">
-                  ATS Sohna Floors in the south of Gurgaon is a masterpiece designed to make consumers not only earn an estate, but earn lifelong memories.
+                  Ornate Floor in the south of Gurgaon is a masterpiece designed to make consumers not only earn an estate, but earn lifelong memories.
                 </p>
                 <p className="text-lg md:text-xl leading-relaxed text-slate-600">
                   The project combines modern architecture with lush greenery, providing a perfect setting for your family. Families looking for privacy with world-class amenities have found the right home.

@@ -11,7 +11,8 @@ const reasons = [
     desc: " Good Beginnings have Great Stories",
     sub: "At White Wolf Infra we empathize with the financial growth every consumers expects from a real estate investment so our intentions are aligned with the Do’s and Dont’s .",
     icon: MessageSquare,
-    tags: [" Aligned Intentions for profit", "Emphasized efforts"]
+    tags: ["Quality of Life", "Design Evolution"],
+    subtag:"Creating Enduring Value",
   },
   {
     phase: "PHASE 02",
@@ -19,7 +20,8 @@ const reasons = [
     desc: "People like to get solved not sold ",
     sub: " At White Wolf Infra, we don’t just sell real estate — we simplify decision-making for our consumers.",
     icon: Landmark,
-    tags: ["Realising Emotions ", "Solving Doubts"]
+    tags: ["Realising Emotions ", "Solving Doubts"],
+    subtag:"Transforming Vision",
   },
   {
     phase: "PHASE 03",
@@ -27,7 +29,8 @@ const reasons = [
     desc: "Transparency Builds Trust",
     sub: " Consumers seek innovation and trust in real estate; White Wolf Infra aims to deliver transparent, principle-driven communication since entering the industry.",
     icon: ShieldCheck,
-    tags: ["Genuine Communication", " Principles over Privileges"]
+    tags: ["Genuine Communication", "Preserving Prosperity"],
+    subtag:"Shaping Landmarks, Empowering Lives",
   },
   {
     phase: "PHASE 04",
@@ -35,7 +38,8 @@ const reasons = [
     desc: "Leadership Through Knowledge",
     sub: "Many want the rewards of leadership but few want the challenges. We take the harder path to build trust and provide a worthy and secure environment for our consumers and employees.",
     icon: MapPin,
-    tags: ["Leadership ensures ethnicity", "Ensures Objectives Achievement "]
+    tags: ["Leadership Transforms Foresight", "Ensures Objectives Achievement "],
+    subtag:"Building More Than Assets",
   },
   {
     phase: "PHASE 05",
@@ -43,7 +47,8 @@ const reasons = [
     desc: "Happy to be with your hassles",
     sub: "We assure seamless process of every paper work which is actually a vital element of the info of your financial transaction and product allotment.",
     icon: Handshake,
-    tags: ["Paper work made easy", "Allotment Is on us"]
+    tags: ["Paper work made easy", "Seamless Paperless, Transparent"],
+    subtag:"Digitally Enabled",
   }
 ];
 
@@ -154,9 +159,9 @@ export default function WhyChooseUs() {
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gray-50 flex items-center justify-center text-[#293659] shadow-inner shrink-0">
                       <item.icon size={28} className="md:w-9 md:h-9" strokeWidth={1.5} />
                     </div>
-                    <span className="text-[10px] md:text-xs font-bold text-gray-500 tracking-[0.2em] uppercase bg-gray-50 px-4 md:px-6 py-2 md:py-3 rounded-full w-max">
+                    {/* <span className="text-[10px] md:text-xs font-bold text-gray-500 tracking-[0.2em] uppercase bg-gray-50 px-4 md:px-6 py-2 md:py-3 rounded-full w-max">
                       SYSTEM 0{i + 1}
-                    </span>
+                    </span> */}
                   </div>
 
                   <div className="border-l-4 border-[#293659] pl-8 mb-12 py-2">
@@ -166,7 +171,7 @@ export default function WhyChooseUs() {
                   </div>
 
                   <div>
-                    <p className="text-[10px] font-black tracking-[0.3em] text-gray-400 mb-5 uppercase">Specifications</p>
+                    <p className="text-[10px] font-black tracking-[0.3em] text-gray-400 mb-5 uppercase">{item.subtag}</p>
                     <div className="flex flex-wrap gap-3">
                       {item.tags.map((tag, idx) => (
                         <span key={idx} className="text-xs font-bold text-[#293659] bg-[#293659]/5 px-5 py-2.5 rounded-lg tracking-wider border border-[#293659]/10">
@@ -222,7 +227,7 @@ export default function WhyChooseUs() {
 
                   {/* Specs */}
                   <div>
-                    <p className="text-[9px] font-black tracking-[0.3em] text-gray-400 mb-3 uppercase">Specifications</p>
+                    <p className="text-[9px] font-black tracking-[0.3em] text-gray-400 mb-3 uppercase">{item.subtag}</p>
                     <div className="flex flex-wrap gap-2">
                       {item.tags.map((tag, idx) => (
                         <span key={idx} className="text-[10px] font-bold text-[#293659] bg-[#293659]/5 px-3 py-1.5 rounded-lg tracking-wider border border-[#293659]/10">

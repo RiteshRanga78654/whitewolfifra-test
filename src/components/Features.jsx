@@ -19,11 +19,11 @@ const projects = [
       { label: "Spacious Living", value: "5.95 acres with avg plot size of 145 sq.yd" },
       { label: "Limited Inventory", value: "Exclusive community with < 94 plots." }
     ],
-    image: "/osiyan.png"
+    image: "/assets/o.jpeg"
   },
   {
     id: "ats-sohna-floor",
-    name: "ATS Sohna Floor",
+    name: "Ornate Floor",
     location: "Sohna, Gurgaon",
     scheme: "Premium Floors",
     type: "Low Rise Builder Floors",
