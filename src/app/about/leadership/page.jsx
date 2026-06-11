@@ -499,12 +499,14 @@ export default function Leadership() {
 
               <motion.h1
                 variants={fadeUpItem}
-                className="text-6xl md:text-8xl lg:text-9xl font-black text-gray-900 tracking-tighter uppercase mb-8 leading-[0.9]"
+                className="text-6xl md:text9xl lg:text-9xl font-black text-gray-900 tracking-tighter uppercase mb-8 leading-[1.05]"
               >
-                Our{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#293659] to-brand-primary">
-                  Leadership
-                </span>
+                Our{"  "}
+              <span
+  className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#293659] to-brand-primary pb-2  tracking-[-0.03em]"
+>
+  Leadership <span>{"  "}</span>
+</span>
               </motion.h1>
 
               <motion.p
