@@ -9,7 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 const TEAM = [
   {
     name: "Bhaswar Paul",
-    title: "Strategic Advisor – Branding, Marketing & Project Conceptualization",
+    title: "Director - Strategy,  Marketing & Business Development",
     photo: "/assets/leadership/Bhaswar_Paul_1.png",
     bio: `Mr. Bhaswar Paul is a seasoned real estate professional, a distinguished real estate strategist with over three decades of experience in driving transformative projects across residential, commercial, leisure and retail sectors. An author, coach, trainer and an entrepreneur, Bhaswar is the Founder & CEO of IREED India, one of India's leading real estate education and industry development platforms. 
 
@@ -23,7 +23,7 @@ For Osiyan Habitat, Bhaswar brings his expertise in branding, concept developmen
   },
   {
     name: "Rohan Vimal",
-    title: "Building Upon a Legacy of Excellence, Integrity, and Lasting Value",
+    title: "Director - Construction, Procurement & Strategic Finance",
     photo: "/assets/leadership/Rohan.png",
     bio: `Mr. Rohan Vimal: Building Upon a Legacy of Excellence, an Engineering graduate in Civil Engineering from the prestigious Delhi College of Engineering, has demonstrated remarkable growth and achievement throughout his professional journey. With a strong technical foundation and an inherent passion for the built environment, he represents a new generation of real estate professionals committed to creating enduring value.
 
@@ -35,7 +35,7 @@ Today, he continues to carry forward his family's legacy with a steadfast commit
   },
   {
     name: "Vivek Yadav",
-    title: "Carrying Forward a Legacy of Vision and Value Creation",
+    title: "Managing Director - Carrying Forward a Legacy of Vision and Value Creation",
     photo: "/assets/leadership/vivek-yadav.jpeg",
     bio: `Today, the third generation of leadership is represented by Mr. Vivek Yadav, who carries forward the impactful vision and values established by his predecessors. An alumnus of the Berlin School of Economics and Law, Germany, and the University of Salford, United Kingdom, he brings a unique blend of global education, entrepreneurial thinking, and a deep commitment to community development.
 

@@ -11,7 +11,7 @@ import { X, Search, ChevronDown, Menu, CheckCircle, Loader2, ChevronRight } from
 // ── Video Sub Dropdown (nested flyout) ──
 function VideoSubDropdown({ isOpen }) {
   const videoSubItems = [
-    { label: 'Township', path: '/resources/our-videos/township' },
+    { label: 'Township', path: '/resources/our-videos/' },
     { label: 'Low Rise', path: '/resources/our-videos/low-rise' },
   ];
 
