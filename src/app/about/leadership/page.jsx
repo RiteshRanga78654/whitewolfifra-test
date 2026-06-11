@@ -9,6 +9,11 @@ import SmoothScroll from "../../../components/SmoothScroll";
 import { Quote, ArrowRight, Award, Globe, Users } from "lucide-react";
 const journeyImages = [
   "/assets/acme.png",
+  "/assets/leadership/acme1.jpeg",
+  "/assets/leadership/acme2.jpeg",
+  "/assets/leadership/acme3.jpeg",
+  "/assets/leadership/acme4.jpeg",
+  "/assets/leadership/acme5.jpeg",
 
 
 ];
@@ -765,9 +770,9 @@ export default function Leadership() {
                       />
                     </AnimatePresence>
 
-                    <div className="absolute inset-0 bg-[#293659]/20 -z-10 translate-x-3 translate-y-3 rounded-3xl rotate-2" />
+                    {/* <div className="absolute inset-0 bg-[#293659]/20 -z-10 translate-x-3 translate-y-3 rounded-3xl rotate-2" /> */}
 
-                    <div className="absolute inset-0 bg-[#293659]/10 -z-20 translate-x-6 translate-y-6 rounded-3xl -rotate-2" />
+                    {/* <div className="absolute inset-0 bg-[#293659]/10 -z-20 translate-x-6 translate-y-6 rounded-3xl -rotate-2" /> */}
                   </div>
 
                   <div className="flex justify-center gap-2 mt-6">
