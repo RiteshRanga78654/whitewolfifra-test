@@ -6,25 +6,72 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter, usePathname } from 'next/navigation';
-import { X, Search, ChevronDown, Menu, CheckCircle, Loader2 } from 'lucide-react';
+import { X, Search, ChevronDown, Menu, CheckCircle, Loader2, ChevronRight } from 'lucide-react';
 
-// ── Desktop Dropdown ──
+// ── Video Sub Dropdown (nested flyout) ──
+function VideoSubDropdown({ isOpen }) {
+  const videoSubItems = [
+    { label: 'Township', path: '/resources/our-videos/township' },
+    { label: 'Low Rise', path: '/resources/our-videos/low-rise' },
+  ];
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          initial={{ opacity: 0, x: 8, scale: 0.97 }}
+          animate={{ opacity: 1, x: 0, scale: 1 }}
+          exit={{ opacity: 0, x: 8, scale: 0.97 }}
+          transition={{ duration: 0.15, ease: [0.23, 1, 0.32, 1] }}
+          className="absolute top-0 left-full ml-2 bg-white border border-black/[0.08] rounded-2xl shadow-2xl shadow-black/10 overflow-hidden min-w-[180px] z-[210]"
+        >
+          {/* Pointer triangle on the left side */}
+          <div className="absolute -left-2 top-4 w-2 h-4 overflow-hidden">
+            <div className="w-3 h-3 bg-white border-l border-b border-black/[0.08] rotate-45 ml-0.5 mt-0.5" />
+          </div>
+          <div className="p-2 mt-1">
+            {videoSubItems.map((sub) => (
+              <Link
+                key={sub.label}
+                href={sub.path}
+                className="flex items-center gap-3 px-4 py-3 rounded-xl text-[13px] font-bold uppercase tracking-[0.1em] text-gray-600 hover:bg-gray-50 hover:text-black transition-all duration-150"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#293659]/30 flex-shrink-0" />
+                {sub.label}
+              </Link>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
 // ── Desktop Dropdown ──
 function DesktopDropdown({ item, pathname }) {
   const [open, setOpen] = useState(false);
+  const [videoSubOpen, setVideoSubOpen] = useState(false);
   const ref = useRef(null);
   const isActive = item.subItems?.some(s => s.path === pathname);
 
   useEffect(() => {
     const handler = (e) => {
-      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+      if (ref.current && !ref.current.contains(e.target)) {
+        setOpen(false);
+        setVideoSubOpen(false);
+      }
     };
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
   }, []);
 
   return (
-    <div ref={ref} className="relative" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+    <div
+      ref={ref}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => { setOpen(false); setVideoSubOpen(false); }}
+    >
       <button
         type="button"
         className={`group flex items-center gap-1 text-[13px] font-black uppercase tracking-[0.15em] transition-colors duration-200 py-1 relative whitespace-nowrap
@@ -44,18 +91,39 @@ function DesktopDropdown({ item, pathname }) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 8, scale: 0.97 }}
             transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
-            /* CHANGED: Removed left-1/2 and -translate-x-1/2. Added left-0 to perfectly align with the left side of the link */
-            className="absolute top-full left-0 mt-4 bg-white border border-black/[0.08] rounded-2xl shadow-2xl shadow-black/10 overflow-hidden min-w-[220px] z-[200]"
+            className="absolute top-full left-0 mt-4 bg-white border border-black/[0.08] rounded-2xl shadow-2xl shadow-black/10 overflow-visible min-w-[220px] z-[200]"
           >
             {/* Little Top Indicator Triangle */}
-            {/* CHANGED: Adjusted little pointer to sit nicely near the left side instead of dead center */}
             <div className="absolute -top-2 left-6 w-4 h-2 overflow-hidden">
               <div className="w-3 h-3 bg-white border-l border-t border-black/[0.08] rotate-45 mx-auto -mt-1.5" />
             </div>
-            
+
             <div className="p-2 mt-1">
               {item.subItems.map((sub) => {
                 const isSubActive = sub.path === pathname;
+                const isVideos = sub.label === 'Our Videos';
+
+                if (isVideos) {
+                  return (
+                    <div
+                      key={sub.label}
+                      className="relative"
+                      onMouseEnter={() => setVideoSubOpen(true)}
+                      onMouseLeave={() => setVideoSubOpen(false)}
+                    >
+                      <Link
+                        href={sub.path}
+                        className={`flex items-center justify-between gap-4 px-4 py-3 rounded-xl text-[13px] font-bold uppercase tracking-[0.1em] transition-all duration-150
+                          ${isSubActive ? 'bg-[#293659]/[0.08] text-[#293659]' : 'text-gray-600 hover:bg-gray-50 hover:text-black'}`}
+                      >
+                        {sub.label}
+                        <ChevronRight className="w-3 h-3 opacity-40 flex-shrink-0" />
+                      </Link>
+                      <VideoSubDropdown isOpen={videoSubOpen} />
+                    </div>
+                  );
+                }
+
                 return (
                   <Link
                     key={sub.label}
@@ -264,6 +332,7 @@ export default function Navbar() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isProjectsOpen, setIsProjectsOpen] = useState(false);
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const [isMobileVideosOpen, setIsMobileVideosOpen] = useState(false);
 
   const pathname = usePathname();
   const router = useRouter();
@@ -443,7 +512,7 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* ── MOBILE NAVBAR (unchanged) ── */}
+      {/* ── MOBILE NAVBAR ── */}
       <div className="lg:hidden fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-[100]" suppressHydrationWarning>
         <nav className="relative flex justify-between items-center px-4 py-2 bg-white/95 backdrop-blur-md border border-black/5 rounded-full shadow-2xl text-gray-900">
           <Link href="/" className="flex items-center gap-1 group cursor-pointer relative z-[110]">
@@ -543,26 +612,69 @@ export default function Navbar() {
                       {isResourcesOpen && (
                         <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} className="overflow-hidden bg-gray-50/50 rounded-2xl mb-2">
                           <div className="p-2 grid grid-cols-1 gap-1">
-                            {[
-                              { sub: 'Visuals', label: 'Our Gallery', path: '/resources/our-gallery' },
-                              { sub: 'Motion', label: 'Our Videos', path: '/resources/our-videos' },
-                              { sub: 'Design', label: 'Our Creatives', path: '/resources/our-creative' },
-                              // { sub: 'Media', label: 'Press Coverage', path: '/resources/press-coverage' },
-                            ].map(r => (
-                              <Link key={r.path} href={r.path} onClick={() => setIsMobileMenuOpen(false)} className="block p-3 rounded-xl hover:bg-white transition-colors">
-                                <p className="text-[8px] font-black text-[#293659] uppercase tracking-widest mb-0.5">{r.sub}</p>
-                                <h4 className="text-[13px] font-bold text-gray-700">{r.label}</h4>
-                              </Link>
-                            ))}
+                            {/* Our Gallery */}
+                            <Link href="/resources/our-gallery" onClick={() => setIsMobileMenuOpen(false)} className="block p-3 rounded-xl hover:bg-white transition-colors">
+                              <p className="text-[8px] font-black text-[#293659] uppercase tracking-widest mb-0.5">Visuals</p>
+                              <h4 className="text-[13px] font-bold text-gray-700">Our Gallery</h4>
+                            </Link>
+
+                            {/* Our Videos — with nested expand */}
+                            <div className="rounded-xl overflow-hidden">
+                              <button
+                                type="button"
+                                onClick={() => setIsMobileVideosOpen(!isMobileVideosOpen)}
+                                className="w-full p-3 hover:bg-white transition-colors flex items-center justify-between"
+                              >
+                                <div className="text-left">
+                                  <p className="text-[8px] font-black text-[#293659] uppercase tracking-widest mb-0.5">Motion</p>
+                                  <h4 className="text-[13px] font-bold text-gray-700">Our Videos</h4>
+                                </div>
+                                <motion.div animate={{ rotate: isMobileVideosOpen ? 180 : 0 }}>
+                                  <ChevronDown className="w-3.5 h-3.5 text-[#293659]" />
+                                </motion.div>
+                              </button>
+                              <AnimatePresence>
+                                {isMobileVideosOpen && (
+                                  <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: 'auto', opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    className="overflow-hidden"
+                                  >
+                                    <div className="pl-4 pb-2 space-y-1 bg-white/60 rounded-b-xl">
+                                      <Link
+                                        href="/resources/our-videos/township"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        className="flex items-center gap-2 p-2.5 rounded-lg hover:bg-white transition-colors"
+                                      >
+                                        <span className="w-1 h-1 rounded-full bg-[#293659]/40 flex-shrink-0" />
+                                        <h4 className="text-[12px] font-bold text-gray-600">Township</h4>
+                                      </Link>
+                                      <Link
+                                        href="/resources/our-videos/low-rise"
+                                        onClick={() => setIsMobileMenuOpen(false)}
+                                        className="flex items-center gap-2 p-2.5 rounded-lg hover:bg-white transition-colors"
+                                      >
+                                        <span className="w-1 h-1 rounded-full bg-[#293659]/40 flex-shrink-0" />
+                                        <h4 className="text-[12px] font-bold text-gray-600">Low Rise</h4>
+                                      </Link>
+                                    </div>
+                                  </motion.div>
+                                )}
+                              </AnimatePresence>
+                            </div>
+
+                            {/* Our Creatives */}
+                            <Link href="/resources/our-creative" onClick={() => setIsMobileMenuOpen(false)} className="block p-3 rounded-xl hover:bg-white transition-colors">
+                              <p className="text-[8px] font-black text-[#293659] uppercase tracking-widest mb-0.5">Design</p>
+                              <h4 className="text-[13px] font-bold text-gray-700">Our Creatives</h4>
+                            </Link>
                           </div>
                         </motion.div>
                       )}
                     </AnimatePresence>
                   </div>
 
-                  {/* <Link href="/blogs" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-3 text-[16px] font-bold text-gray-900 border-b border-gray-50 flex items-center justify-between">
-                    Blogs <ChevronDown className="w-4 h-4 -rotate-90 text-gray-300" />
-                  </Link> */}
                   <Link href="/career" onClick={() => setIsMobileMenuOpen(false)} className="px-4 py-3 text-[16px] font-bold text-gray-900 border-b border-gray-50 flex items-center justify-between">
                     Career <ChevronDown className="w-4 h-4 -rotate-90 text-gray-300" />
                   </Link>

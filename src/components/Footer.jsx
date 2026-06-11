@@ -44,14 +44,14 @@ const Footer = () => {
     company: [
       { name: 'About Us', href: '/about/vision-mission' },
       { name: 'Our Projects', href: '/projects/osiyan-habitat' },
-      { name: 'Sustainability', href: '#' },
+      // { name: 'Sustainability', href: '#' },
       { name: 'Careers', href: '/career' },
       { name: 'Partner Registration', href: '/partner-registration' },
       { name: 'Contact', href: '/contact' }
     ],
     services: [
-      { name: "Osiyan Habitat", href: "/projects/osiyan-habitat" },
-      { name: "ATS Sohna Floor", href: "/projects/ats-sohna-floor" },
+      { name: "Township", href: "/projects/osiyan-habitat" },
+      { name: "Low Rise", href: "/projects/ats-sohna-floor" },
     ],
     legal: [
       {
