@@ -501,10 +501,10 @@ const ATSSohnaFloors = () => {
             >
               <div className="space-y-6 mb-8">
                 <h3 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">
-                  Why invest in ATS Sohna?
+                  Why invest in Ornate Floor?
                 </h3>
                 <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-lg">
-                  A perfect blend of luxury living, strong connectivity, and the trusted brand value of ATS Group, ensuring high appreciation potential.
+                  A perfect blend of luxury living, strong connectivity, and the trusted brand value of White Wolf Infra, ensuring high appreciation potential.
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

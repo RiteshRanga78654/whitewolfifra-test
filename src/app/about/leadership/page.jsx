@@ -10,6 +10,7 @@ import { Quote, ArrowRight, Award, Globe, Users } from "lucide-react";
 const journeyImages = [
   "/assets/acme.png",
 
+
 ];
 
 /* ── DATA ─────────────────────────────────────────────────────── */
@@ -594,7 +595,7 @@ export default function Leadership() {
         {/* { zwsxedcfvgbh} */}
         <LeadershipTeam />
         {/* Chairman's Message */}
-        <section className="py-24 lg:py-32 px-6 bg-white">
+        {/* <section className="py-24 lg:py-32 px-6 bg-white">
           <div className="max-w-7xl mx-auto">
             <motion.div
               initial="hidden"
@@ -651,7 +652,7 @@ export default function Leadership() {
               </motion.div>
             </motion.div>
           </div>
-        </section>
+        </section> */}
 
         {/* Leadership Philosophy */}
         <section className="py-24 lg:py-32 px-6 bg-[#1a1a1a] relative overflow-hidden">
