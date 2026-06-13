@@ -357,7 +357,7 @@ const OsiyanHabitat = () => {
   const handleBrochureDownload = (e) => {
     e.preventDefault();
     const link = document.createElement("a");
-    link.href = "/assets/pdf/osiyan-habitat-brochure.pdf";
+    link.href = "/assets/pdf/Osiyan_Habitat.pdf";
     link.download = "Osiyan-Habitat-Brochure.pdf";
     document.body.appendChild(link);
     link.click();
