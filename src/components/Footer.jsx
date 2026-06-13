@@ -42,12 +42,12 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '/about/vision-mission' },
-      { name: 'Our Projects', href: '/projects/osiyan-habitat' },
+      { name: "About Us", href: "/about/vision-mission" },
+      { name: "Our Projects", href: "/projects/osiyan-habitat" },
       // { name: 'Sustainability', href: '#' },
-      { name: 'Careers', href: '/career' },
-      { name: 'Partner Registration', href: '/partner-registration' },
-      { name: 'Contact', href: '/contact' }
+      { name: "Careers", href: "/career" },
+      { name: "Partner Registration", href: "/partner-registration" },
+      { name: "Contact", href: "/contact" },
     ],
     services: [
       { name: "Township", href: "/projects/osiyan-habitat" },
@@ -56,17 +56,17 @@ const Footer = () => {
     legal: [
       {
         name: "Sohna",
-        href: "",
+        href: "/projects/ats-sohna-floor",
         address: "",
       },
       {
         name: "Jhajjar",
-        href: "",
+        href: "/projects/osiyan-habitat",
         address: "",
       },
       {
         name: "Tijara",
-        href: "",
+        href: "/",
         address: "",
       },
     ],
@@ -158,13 +158,15 @@ const Footer = () => {
                 {footerLinks.legal.map((link) => (
                   <li key={link.name} className="flex flex-col space-y-1">
                     {/* Location Name */}
-                    <p
-                      
-                      className="text-white/40 hover:text-white text-[16px] tracking-[0.1em] font-bold transition-colors"
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
-                      {link.name}
-                    </p>
-
+                      <p className="text-white/40 hover:text-white text-[16px] tracking-[0.1em] font-bold transition-colors">
+                        {link.name}
+                      </p>
+                    </a>
                     {/* Full Address Subline */}
                     <span className="text-white text-[13px] font-normal tracking-wide">
                       {link.address}
@@ -187,8 +189,7 @@ const Footer = () => {
                   <MapPin size={18} />
                 </div>
                 <div className="text-[15px] font-bold leading-relaxed text-white transition-colors">
-                  Plot number E-02, ATS Homekraft Bonheur Avenue, Sohna road,
-                  Sector 35, Sohna, Haryana-122103
+                  Plot Number E-02, ATS Homekraft Bonheur Avenue, Sohna Road, Sector 35, Sohna, Haryana-122103
                 </div>
               </div>
 
