@@ -54,6 +54,8 @@
 import localFont from 'next/font/local';
 import './globals.css';
 import Script from 'next/script';
+import FloatingButtons from '../components/FloatingButtons';
+import CrmButton from '../components/CrmButton';
 
 const manrope = localFont({
   src: [
@@ -112,6 +114,8 @@ export default function RootLayout({ children }) {
         <div id="page-wrapper" suppressHydrationWarning>
           {children}
         </div>
+        <FloatingButtons />
+        <CrmButton/>
       </body>
     </html>
   );

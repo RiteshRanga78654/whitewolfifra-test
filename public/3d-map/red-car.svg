@@ -1,0 +1,123 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 90" width="280" height="90">
+
+  <!-- ===== RIGHT-FACING CAR (left side of image) ===== -->
+  <g transform="translate(10, 5)">
+    <!-- Shadow -->
+    <ellipse cx="65" cy="82" rx="58" ry="5" fill="rgba(0,0,0,0.18)"/>
+    <!-- Car body lower -->
+    <rect x="8" y="44" width="114" height="30" rx="5" fill="#CC2020"/>
+    <!-- Car cabin/roof -->
+    <path d="M28,44 L40,20 L90,20 L106,44 Z" fill="#E03030"/>
+    <!-- Cabin outline -->
+    <path d="M28,44 L40,20 L90,20 L106,44" fill="none" stroke="#991010" stroke-width="1.2"/>
+    <!-- Body outline -->
+    <rect x="8" y="44" width="114" height="30" rx="5" fill="none" stroke="#991010" stroke-width="1.2"/>
+
+    <!-- Front windshield (right side = front) -->
+    <path d="M90,22 L104,44 L88,44 L88,22 Z" fill="#AADDF0" opacity="0.85"/>
+    <path d="M90,22 L104,44 L88,44 L88,22 Z" fill="none" stroke="#7BBBD4" stroke-width="0.8"/>
+    <!-- Rear windshield (left side = rear) -->
+    <path d="M40,22 L42,44 L28,44 L28,22 Z" fill="#AADDF0" opacity="0.75"/>
+    <path d="M40,22 L42,44 L28,44 L28,22 Z" fill="none" stroke="#7BBBD4" stroke-width="0.8"/>
+    <!-- Side windows -->
+    <path d="M42,22 L88,22 L88,44 L42,44 Z" fill="#C8E8F5" opacity="0.7"/>
+    <path d="M42,22 L88,22 L88,44 L42,44 Z" fill="none" stroke="#7BBBD4" stroke-width="0.8"/>
+    <!-- Door line -->
+    <line x1="65" y1="44" x2="65" y2="72" stroke="#AA1010" stroke-width="1.2"/>
+    <!-- Door handle -->
+    <rect x="70" y="56" width="10" height="3" rx="1.5" fill="#AA1010"/>
+    <rect x="38" y="56" width="10" height="3" rx="1.5" fill="#AA1010"/>
+
+    <!-- Headlight (front = right) -->
+    <rect x="118" y="49" width="4" height="10" rx="2" fill="#FFFAAA"/>
+    <rect x="118" y="49" width="4" height="10" rx="2" fill="none" stroke="#D4C800" stroke-width="0.5"/>
+    <!-- Headlight glow -->
+    <ellipse cx="122" cy="54" rx="6" ry="4" fill="#FFFF88" opacity="0.3"/>
+
+    <!-- Taillight (rear = left) -->
+    <rect x="8" y="49" width="4" height="10" rx="2" fill="#FF3333"/>
+    <rect x="8" y="49" width="4" height="10" rx="2" fill="none" stroke="#CC0000" stroke-width="0.5"/>
+
+    <!-- Front bumper -->
+    <rect x="115" y="60" width="7" height="8" rx="2" fill="#B01010"/>
+    <!-- Rear bumper -->
+    <rect x="8" y="60" width="7" height="8" rx="2" fill="#B01010"/>
+
+    <!-- Front wheel (right) -->
+    <circle cx="100" cy="76" r="13" fill="#222"/>
+    <circle cx="100" cy="76" r="9" fill="#444"/>
+    <circle cx="100" cy="76" r="5" fill="#888"/>
+    <circle cx="100" cy="76" r="2" fill="#999"/>
+    <!-- Rear wheel (left) -->
+    <circle cx="30" cy="76" r="13" fill="#222"/>
+    <circle cx="30" cy="76" r="9" fill="#444"/>
+    <circle cx="30" cy="76" r="5" fill="#888"/>
+    <circle cx="30" cy="76" r="2" fill="#999"/>
+
+    <!-- Wheel arch highlight -->
+    <path d="M87,73 Q100,60 113,73" fill="none" stroke="#CC1515" stroke-width="1.5"/>
+    <path d="M17,73 Q30,60 43,73" fill="none" stroke="#CC1515" stroke-width="1.5"/>
+
+    <!-- Roof highlight -->
+    <path d="M42,22 Q65,16 88,22" fill="none" stroke="#FF5555" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- ===== LEFT-FACING CAR (right side of image, mirrored) ===== -->
+  <g transform="translate(270, 95) scale(-1,-1) translate(10, 5)">
+    <!-- Shadow -->
+    <ellipse cx="65" cy="82" rx="58" ry="5" fill="rgba(0,0,0,0.18)"/>
+    <!-- Car body lower -->
+    <rect x="8" y="44" width="114" height="30" rx="5" fill="#CC2020"/>
+    <!-- Car cabin/roof -->
+    <path d="M28,44 L40,20 L90,20 L106,44 Z" fill="#E03030"/>
+    <path d="M28,44 L40,20 L90,20 L106,44" fill="none" stroke="#991010" stroke-width="1.2"/>
+    <rect x="8" y="44" width="114" height="30" rx="5" fill="none" stroke="#991010" stroke-width="1.2"/>
+
+    <!-- Front windshield -->
+    <path d="M90,22 L104,44 L88,44 L88,22 Z" fill="#AADDF0" opacity="0.85"/>
+    <path d="M90,22 L104,44 L88,44 L88,22 Z" fill="none" stroke="#7BBBD4" stroke-width="0.8"/>
+    <!-- Rear windshield -->
+    <path d="M40,22 L42,44 L28,44 L28,22 Z" fill="#AADDF0" opacity="0.75"/>
+    <path d="M40,22 L42,44 L28,44 L28,22 Z" fill="none" stroke="#7BBBD4" stroke-width="0.8"/>
+    <!-- Side windows -->
+    <path d="M42,22 L88,22 L88,44 L42,44 Z" fill="#C8E8F5" opacity="0.7"/>
+    <path d="M42,22 L88,22 L88,44 L42,44 Z" fill="none" stroke="#7BBBD4" stroke-width="0.8"/>
+    <!-- Door line -->
+    <line x1="65" y1="44" x2="65" y2="72" stroke="#AA1010" stroke-width="1.2"/>
+    <!-- Door handle -->
+    <rect x="70" y="56" width="10" height="3" rx="1.5" fill="#AA1010"/>
+    <rect x="38" y="56" width="10" height="3" rx="1.5" fill="#AA1010"/>
+
+    <!-- Headlight -->
+    <rect x="118" y="49" width="4" height="10" rx="2" fill="#FFFAAA"/>
+    <rect x="118" y="49" width="4" height="10" rx="2" fill="none" stroke="#D4C800" stroke-width="0.5"/>
+    <ellipse cx="122" cy="54" rx="6" ry="4" fill="#FFFF88" opacity="0.3"/>
+    <!-- Taillight -->
+    <rect x="8" y="49" width="4" height="10" rx="2" fill="#FF3333"/>
+    <rect x="8" y="49" width="4" height="10" rx="2" fill="none" stroke="#CC0000" stroke-width="0.5"/>
+
+    <!-- Front bumper -->
+    <rect x="115" y="60" width="7" height="8" rx="2" fill="#B01010"/>
+    <!-- Rear bumper -->
+    <rect x="8" y="60" width="7" height="8" rx="2" fill="#B01010"/>
+
+    <!-- Front wheel -->
+    <circle cx="100" cy="76" r="13" fill="#222"/>
+    <circle cx="100" cy="76" r="9" fill="#444"/>
+    <circle cx="100" cy="76" r="5" fill="#888"/>
+    <circle cx="100" cy="76" r="2" fill="#999"/>
+    <!-- Rear wheel -->
+    <circle cx="30" cy="76" r="13" fill="#222"/>
+    <circle cx="30" cy="76" r="9" fill="#444"/>
+    <circle cx="30" cy="76" r="5" fill="#888"/>
+    <circle cx="30" cy="76" r="2" fill="#999"/>
+
+    <!-- Wheel arch highlight -->
+    <path d="M87,73 Q100,60 113,73" fill="none" stroke="#CC1515" stroke-width="1.5"/>
+    <path d="M17,73 Q30,60 43,73" fill="none" stroke="#CC1515" stroke-width="1.5"/>
+
+    <!-- Roof highlight -->
+    <path d="M42,22 Q65,16 88,22" fill="none" stroke="#FF5555" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+</svg>
