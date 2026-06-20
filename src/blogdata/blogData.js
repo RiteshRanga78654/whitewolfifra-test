@@ -4,7 +4,7 @@ export const blogPosts = [
   {
     id: 1,
     slug: "why-jhajjar-is-emerging-as-haryanas-next-real-estate-hotspot",
-    category: "Market Insights",
+    category: "DECOR",
     title: "Why Jhajjar is Emerging as Haryana's Next Real Estate Hotspot",
     excerpt:
       "Discover how infrastructure growth, industrial expansion, and affordable property prices are transforming Jhajjar into Haryana's next major real estate destination.",
@@ -77,7 +77,7 @@ Jhajjar stands out as an undeniable destination for growth, offering a balanced 
   {
     id: 2,
     slug: "top-reasons-to-invest-in-residential-plots-in-jhajjar-2026",
-    category: "Investment",
+    category: "LIVING",
     title: "Top Reasons to Invest in Residential Plots in Jhajjar in 2026",
     excerpt:
       "Explore why residential plots in Jhajjar are becoming one of the most attractive investment opportunities in NCR for 2026.",
@@ -151,7 +151,7 @@ The best real estate opportunities go to those who spot them early. Jhajjar is f
   {
     id: 3,
     slug: "jhajjar-vs-gurugram-where-should-you-invest-in-property",
-    category: "Investment Analysis",
+    category: "EVENTS",
     title: "Jhajjar vs. Gurugram: Where Should You Invest in Property?",
     excerpt:
       "A detailed comparison of Jhajjar and Gurugram to help investors choose between stable returns and high-growth opportunities.",
@@ -230,7 +230,7 @@ You want to maximise your return on investment (ROI) in terms of capital appreci
    {
   id: 4, // Assigned incremental ID
   slug: "rising-horizon-jhajjar-real-estate-market-growth",
-  category: "Market Analysis",
+  category: "SUSTAINABILITY",
   title: "The Rising Horizon: Future Growth Prospects of Jhajjar’s Real Estate Market",
   excerpt: "Discover how industrial shifts, infrastructure upgrades, and changing land use dynamics are turning Jhajjar into the NCR's next big real estate success story.",
   content: `
