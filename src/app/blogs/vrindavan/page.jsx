@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import Amenities from "../../../components/Amenities";
 import BlogSliderProject from "../../../components/BlogSliderProject";
 import { ArrowRight } from "lucide-react";
 import { Eye, Home, House, Percent, Maximize } from "lucide-react";
@@ -19,17 +20,6 @@ import "swiper/css/pagination";
 const page = () => {
   // Replace icon, title and time as per your data.
   // "icon" should be any lucide-react icon component.
-  const locationBenefits = [
-    { id: 1, icon: Home, title: "Taj Shiroda", time: "20 MIN" },
-    { id: 2, icon: Moon, title: "Kondura Beach", time: "2 MIN" },
-    { id: 3, icon: Moon, title: "Wayangani Beach", time: "5 MIN" },
-    { id: 4, icon: Moon, title: "Vengurla Beach", time: "5 MIN" },
-    { id: 5, icon: Dice5, title: "Casino World", time: "35 MIN" },
-    { id: 6, icon: Building2, title: "Sarovar Portico", time: "20 MIN" },
-    { id: 7, icon: Plane, title: "Mopa Airport", time: "45 MIN" },
-    { id: 8, icon: Plane, title: "Chipi Airport", time: "20 MIN" },
-    { id: 9, icon: Database, title: "BCCI Cricket Stadium", time: "35 MIN" },
-  ];
 
   const BRAND_GREEN = "#263659";
 
@@ -37,32 +27,27 @@ const page = () => {
     {
       id: 1,
       title: "Vedic Reset & Signature Spa",
-      image: "/white_wolf_frame_1.png",
+      image: "/assets/blog/pexels-pixabay-208504.jpg",
     },
     {
       id: 2,
       title: "Advanced Recovery Circuits",
-      image: "/white_wolf_frame_2.png",
+      image: "/assets/blog/well.avif",
     },
     {
       id: 3,
       title: "Performance Training Studio",
-      image: "/white_wolf_frame_3.png",
+      image: "/assets/blog/pexels-akshi-yogashala-1959421670-31185784.jpg",
     },
     {
       id: 4,
       title: "Cryo & Cold Therapy Suite",
-      image: "/white_wolf_frame_1.png",
+      image: "/assets/blog/pexels-rishikeshyogpeeth-34047468.jpg",
     },
     {
       id: 5,
       title: "Infrared Sauna Lounge",
-      image: "/white_wolf_frame_2.png",
-    },
-    {
-      id: 6,
-      title: "Mind & Movement Studio",
-      image: "/white_wolf_frame_3.png",
+      image: "/assets/blog/pexels-yoga-course-india-932671557-20035463.jpg",
     },
   ];
 
@@ -205,7 +190,7 @@ const page = () => {
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/assets/videos/xyz.mp4"
+          src="/assets/videos/20442432-hd_1920_1080_60fps.mp4"
           autoPlay
           muted
           loop
@@ -255,7 +240,7 @@ const page = () => {
       <section className="relative w-full overflow-hidden bg-black">
         {/* Background image */}
         <Image
-          src="/assets/osiyan.jpeg"
+          src="/assets/blog/vrindavan.jpg"
           alt=""
           fill
           priority
@@ -265,9 +250,9 @@ const page = () => {
         <div className="absolute inset-0 bg-black/45" />
 
         {/* Content */}
-        <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-10 sm:py-28 lg:px-16">
+        <div className="relative z-10 mx-auto max-w-[1400px] px-4 py-16 sm:px-10 sm:py-28 lg:px-16">
           <h2
-            className="mb-10 sm:mb-14 bg-gradient-to-r from-[#293659] to-brand-primary bg-clip-text text-white text-[2rem] leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
+            className="mb-10 sm:mb-14 bg-gradient-to-r from-[#293659] to-brand-primary bg-clip-text text-white text-[2.5rem] leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl"
             style={{ fontFamily: "manrope, serif" }}
           >
             What White Wolf Infra
@@ -284,13 +269,13 @@ const page = () => {
                 <div className="flex items-center gap-4 text-[#F3EEE3]">
                   <span className="flex-shrink-0">{item.icon}</span>
                   <span
-                    className="text-lg sm:text-xl lg:text-2xl"
+                    className="text-lg sm:text-xl lg:text-3xl"
                     style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
                   >
                     {item.title}
                   </span>
                 </div>
-                <p className="max-w-md pl-10 text-sm leading-relaxed text-[#E8E3D6]/90 sm:pl-0 sm:text-base">
+                <p className="max-w-md pl-20 text-xl leading-relaxed text-[#fff] sm:pl-0 sm:text-base">
                   {item.description}
                 </p>
               </div>
@@ -304,9 +289,7 @@ const page = () => {
           {/* Left: Sticky Heading */}
           <div className="relative">
             <div className="lg:sticky lg:top-32">
-              <h2
-                className="font-['Playfair_Display'] uppercase font-bold leading-[1.05] text-3xl sm:text-5xl md:text-6xl bg-gradient-to-r from-[#293659] to-brand-primary bg-clip-text text-transparent"
-              >
+              <h2 className="font-['Playfair_Display'] uppercase font-bold leading-[1.05] text-3xl sm:text-5xl md:text-6xl bg-gradient-to-r from-[#293659] to-brand-primary bg-clip-text text-transparent">
                 Facilities &amp;
                 <br />
                 Experiences
@@ -347,7 +330,10 @@ const page = () => {
                       className="relative z-10 flex items-center justify-center w-12 h-12 sm:w-10 sm:h-14 rounded-full shrink-0 ring-4 ring-white shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:shadow-[#6CB52D]/40 group-hover:scale-110"
                       style={{ backgroundColor: BRAND_GREEN }}
                     >
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" strokeWidth={1.75} />
+                      <Icon
+                        className="w-5 h-5 sm:w-6 sm:h-6 text-white"
+                        strokeWidth={1.75}
+                      />
                     </div>
 
                     {/* Text Content */}
@@ -366,6 +352,8 @@ const page = () => {
           </div>
         </div>
       </section>
+
+     
 
       <section className="relative w-full overflow-hidden bg-[#1d2944] py-16 px-4 sm:px-6 md:px-12 lg:px-20">
         {/* Background texture / pattern image */}
@@ -485,81 +473,19 @@ const page = () => {
         `}</style>
       </section>
 
-      <section className="relative w-full overflow-hidden">
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/white_wolf_frame_2.png')" }}
-          aria-hidden="true"
-        />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-black/55" aria-hidden="true" />
-
-        <div className="relative z-10 px-4 sm:px-6 md:px-12 lg:px-20 py-16 sm:py-20">
-          <div className="max-w-7xl mx-auto">
-            {/* Heading */}
-            <h2 className="font-['Playfair_Display'] uppercase text-white text-3xl sm:text-5xl md:text-6xl font-bold leading-[1.05] mb-12 sm:mb-16">
-              Benefits of the
-              <br />
-              Location
-            </h2>
-
-            {/* Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-              {locationBenefits.map((item, index) => {
-                const Icon = item.icon;
-                const col = index % 3;
-                const row = Math.floor(index / 3);
-                const totalRows = Math.ceil(locationBenefits.length / 3);
-
-                return (
-                  <motion.div
-                    key={item.id}
-                    className={`
-                    group py-8 sm:py-10 px-6 sm:px-8 cursor-default
-                    ${col !== 0 ? "lg:border-l border-white/15" : ""}
-                    ${row !== totalRows - 1 ? "border-b border-white/15" : ""}
-                  `}
-                    whileHover={{
-                      y: [0, -12, 0, -5, 0],
-                      transition: { duration: 0.6, ease: "easeInOut" },
-                    }}
-                  >
-                    <Icon
-                      className="w-8 h-8 sm:w-9 sm:h-9 text-white mb-4 sm:mb-5 transition-transform duration-300 group-hover:scale-110"
-                      strokeWidth={1.5}
-                    />
-                    <h3 className="text-white font-bold text-sm sm:text-base md:text-lg uppercase tracking-wide mb-2">
-                      {item.title}
-                    </h3>
-                    <p
-                      className="font-bold text-sm md:text-base tracking-wide"
-                      style={{ color: "#6CB52D" }}
-                    >
-                      {item.time}
-                    </p>
-                  </motion.div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <BlogSliderProject />
-
-      <div className="w-full h-56 sm:h-64 md:h-70 overflow-hidden mb-16">
+       <div className="w-full h-56 sm:h-64 md:h-70 overflow-hidden my-16">
         <img
-          src="/assets/blog/vridava.png"
+          src="/assets/blog/banner.png"
           alt="Team"
           className="w-full h-full object-cover hover:grayscale-0 hover:scale-[1.30] transition-transform duration-[2000ms]"
         />
       </div>
 
-       <Footer />
-    </div>
+      <Amenities />
+      <BlogSliderProject />
 
-              
+      <Footer />
+    </div>
   );
 };
 
