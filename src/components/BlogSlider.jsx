@@ -29,7 +29,7 @@ const PROJECTS = [
     location: "Vengurla, Sindhudurg",
     tag: "Premium Villas",
     image: "/assets/blog/hills.png",
-    Link: "https://whitewolfinfra.com/blogs",
+    Link: "/blogs/himachal-pardesh",
   },
 ];
 
