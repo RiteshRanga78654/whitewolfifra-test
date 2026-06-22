@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
-import Amenities from "../../../components/Amenities";
+import AmenitiesGoa from "../../../components/AmenitiesGoa";
 import BlogSliderProject from "../../../components/BlogSliderProject";
 import { ArrowRight } from "lucide-react";
 import { Eye, Home, House, Percent, Maximize } from "lucide-react";
@@ -189,7 +189,7 @@ const page = () => {
         {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/assets/videos/20442432-hd_1920_1080_60fps.mp4"
+          src="/assets/videos/blog_herosectio.mp4"
           autoPlay
           muted
           loop
@@ -219,7 +219,7 @@ const page = () => {
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 className="text-white font-bold tracking-tight text-3xl sm:text-5xl lg:text-6xl leading-[1.1]"
               >
-                Vrindavan
+                Goa Villas
               </motion.h2>
 
               <motion.p
@@ -239,7 +239,7 @@ const page = () => {
       <section className="relative w-full overflow-hidden bg-black">
         {/* Background image */}
         <Image
-          src="/assets/blog/vrindavan.jpg"
+          src="/assets/blog/goa/goa3.jpg"
           alt=""
           fill
           priority
@@ -474,13 +474,13 @@ const page = () => {
 
        <div className="w-full h-56 sm:h-64 md:h-70 overflow-hidden my-16">
         <img
-          src="/assets/blog/banner.png"
+          src="/assets/blog/goa/goa-banner.jpg"
           alt="Team"
           className="w-full h-full object-cover hover:grayscale-0 hover:scale-[1.30] transition-transform duration-[2000ms]"
         />
       </div>
 
-      <Amenities />
+      <AmenitiesGoa />
       <BlogSliderProject />
 
       <Footer />

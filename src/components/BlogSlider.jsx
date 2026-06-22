@@ -21,7 +21,7 @@ const PROJECTS = [
     location: "Vengurla, Sindhudurg",
     tag: "Farm Bungalows & Villas",
     image: "/assets/blog/ocean.png",
-    Link: "https://whitewolfinfra.com/blogs",
+    Link: "/blogs/goa",
   },
   {
     id: "osiyan-habitat",
