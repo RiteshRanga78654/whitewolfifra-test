@@ -53,8 +53,8 @@ const BlogPage = () => {
 
   // Realigned to target your /blog/[slug]/page.jsx folder structure route
   const handlePostClick = (slug) => {
-    router.push(`/blogs/${slug}`);
-  };
+  window.open(`/blogs/${slug}`, "_blank", "noopener,noreferrer");
+};
 
   return (
     <>

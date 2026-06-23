@@ -298,10 +298,10 @@ For short-term speculators, the market requires patience as core civic amenities
 
    {
   id: 5, // Assigned incremental ID
-  slug: "rising-horizon-jhajjar-real-estate-market-growth",
+  slug: "best-locations-to-buy-residential-plots-in-jhajjar",
   category: "SUSTAINABILITY",
-  title: "The Rising Horizon: Future Growth Prospects of Jhajjar’s Real Estate Market",
-  excerpt: "Discover how industrial shifts, infrastructure upgrades, and changing land use dynamics are turning Jhajjar into the NCR's next big real estate success story.",
+  title: "Best Locations to Buy Residential Plots in Jhajjar",
+  excerpt: "Haryana has witnessed a massive paradigm shift in real estate scenario in the last decade. With the primary markets of Gurugram and Delhi reaching saturation and property prices soaring high, the secondary markets of the National Capital Region (NCR) are gaining limelight. Jhajjar has emerged as one of the most promising destinations for investment in land and residential plots. Jhajjar is a highly affordable place with high growth potential with a strong infrastructural development, industrialisation and proximity to major economic hubs.",
   content: `
 Best Locations to Buy Residential Plots in Jhajjar
 
@@ -379,15 +379,15 @@ Jhajjar is no longer a sleepy town on the outskirts of the capital; it is an eco
   date: "June 18, 2026",
   readTime: "8 min read",
   featured: false,
-  img: "/assets/blog/futuregrow.jpeg",
+  img: "/assets/blog/jhajjar/best-location-to-buy.jpeg",
   tags: ["Real Estate", "Jhajjar", "Market Analysis", "NCR"],
 },
  {
   id: 6, // Assigned incremental ID
-  slug: "rising-horizon-jhajjar-real-estate-market-growth",
+  slug: "how-the-delhi-mumbai-expressway-is-impacting-property-prices-in-jhajjar",
   category: "SUSTAINABILITY",
-  title: "The Rising Horizon: Future Growth Prospects of Jhajjar’s Real Estate Market",
-  excerpt: "Discover how industrial shifts, infrastructure upgrades, and changing land use dynamics are turning Jhajjar into the NCR's next big real estate success story.",
+  title: "How the Delhi-Mumbai Expressway is Impacting Property Prices in Jhajjar",
+  excerpt: "How the Delhi–Mumbai Expressway is Redefining Jhajjar’s Real Estate",
   content: `
 How the Delhi–Mumbai Expressway is Redefining Jhajjar’s Real Estate
 
@@ -451,16 +451,16 @@ The Delhi–Mumbai Expressway has acted as a profound economic catalyst for the 
   date: "June 20, 2026",
   readTime: "8 min read",
   featured: false,
-  img: "/assets/blog/futuregrow.jpeg",
+  img: "/assets/blog/jhajjar/delhi-mumbai.jpeg",
   tags: ["Real Estate", "Jhajjar", "Market Analysis", "NCR"],
 }
 ,
  {
   id: 7, // Assigned incremental ID
-  slug: "rising-horizon-jhajjar-real-estate-market-growth",
+  slug: "upcoming-infrastructure-projects-transforming-jhajjar",
   category: "SUSTAINABILITY",
-  title: "The Rising Horizon: Future Growth Prospects of Jhajjar’s Real Estate Market",
-  excerpt: "Discover how industrial shifts, infrastructure upgrades, and changing land use dynamics are turning Jhajjar into the NCR's next big real estate success story.",
+  title: "Upcoming Infrastructure Projects Transforming Jhajjar",
+  excerpt: "Jhajjar was a sleepy, agricultural district in Haryana, overshadowed for years by its high-rise, glitzy neighbour, Gurugram. But the story of this region is in the middle of a massive paradigm shift.",
   content: `
 Upcoming Infrastructure Projects Transforming Jhajjar
 
@@ -547,7 +547,7 @@ The window of opportunity is wide open for the forward-thinking investor and hom
   date: "June 22, 2026",
   readTime: "8 min read",
   featured: false,
-  img: "/assets/blog/futuregrow.jpeg",
+  img: "/assets/blog/jhajjar/infra.jpeg",
   tags: ["Real Estate", "Jhajjar", "Market Analysis", "NCR"],
 }
 
