@@ -423,9 +423,9 @@ const benefits = [
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
                   <div className="absolute bottom-5 left-5 right-5">
-                    <h3 className="text-white text-base sm:text-lg md:text-xl font-bold drop-shadow-sm">
+                    {/* <h3 className="text-white text-base sm:text-lg md:text-xl font-bold drop-shadow-sm">
                       {item.title}
-                    </h3>
+                    </h3> */}
                   </div>
                 </motion.div>
               </SwiperSlide>

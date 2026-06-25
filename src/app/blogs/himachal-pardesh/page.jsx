@@ -26,27 +26,27 @@ const page = () => {
     {
       id: 1,
       title: "Vedic Reset & Signature Spa",
-      image: "/assets/blog/pexels-pixabay-208504.jpg",
+      image: "/assets/blog/himachal/yoga.png",
     },
     {
       id: 2,
       title: "Advanced Recovery Circuits",
-      image: "/assets/blog/well.avif",
+      image: "/assets/blog/himachal/pool.png",
     },
     {
       id: 3,
       title: "Performance Training Studio",
-      image: "/assets/blog/pexels-akshi-yogashala-1959421670-31185784.jpg",
+      image: "/assets/blog/himachal/spa.png",
     },
     {
       id: 4,
       title: "Cryo & Cold Therapy Suite",
-      image: "/assets/blog/pexels-rishikeshyogpeeth-34047468.jpg",
+      image: "/assets/blog/himachal/trail.png",
     },
     {
       id: 5,
       title: "Infrared Sauna Lounge",
-      image: "/assets/blog/pexels-yoga-course-india-932671557-20035463.jpg",
+      image: "/assets/blog/himachal/fitness.png",
     },
   ];
 
@@ -422,9 +422,9 @@ const timelineItems = [
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
                   <div className="absolute bottom-5 left-5 right-5">
-                    <h3 className="text-white text-base sm:text-lg md:text-xl font-bold drop-shadow-sm">
+                    {/* <h3 className="text-white text-base sm:text-lg md:text-xl font-bold drop-shadow-sm">
                       {item.title}
-                    </h3>
+                    </h3> */}
                   </div>
                 </motion.div>
               </SwiperSlide>
