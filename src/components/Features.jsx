@@ -10,20 +10,20 @@ const projects = [
     id: "osiyan-habitat",
     name: "Osiyan Habitat",
     location: "Jhajjar, Haryana",
-    scheme: "DDJAY",
+    scheme: "Premium Plots",
     type: "Plotted Development",
     description: "In Jain Dharma, Osiyan (or Osian) is a highly significant ancient town, pilgrimage center, and the birthplace of the Oswal Jain community. It is widely celebrated for its architectural treasures and its role in the spread of Jainism in Western India.",
     details: [
-      { label: "Project Identity", value: "Premium DDJAY plotted development." },
+      { label: "Project Identity", value: "Premium Plotted Development." },
       { label: "Strategic Location", value: "Situated in the growing hub of Jhajjar." },
       { label: "Spacious Living", value: "5.95 acres with avg plot size of 145 sq.yd" },
       { label: "Limited Inventory", value: "Exclusive community with < 94 plots." }
     ],
-    image: "/assets/o.jpeg"
+    image: "/assets/osiyan.jpeg"
   },
   {
     id: "ats-sohna-floor",
-    name: "Ornate Floor",
+    name: "Elysian Homes",
     location: "Sohna, Gurgaon",
     scheme: "Premium Floors",
     type: "Low Rise Builder Floors",
@@ -34,7 +34,7 @@ const projects = [
       { label: "Secure & Private", value: "Gated community with 24/7 security." },
       { label: "Modern Amenities", value: "Clubhouse, gym, and landscaped gardens." }
     ],
-    image: "/ats_sohna_floor_1778484325269.png"
+    image: "/assets/elysian.png"
   }
 ];
 

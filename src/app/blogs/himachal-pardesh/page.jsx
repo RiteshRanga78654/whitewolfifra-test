@@ -325,7 +325,7 @@ const timelineItems = [
                   >
                     {/* Icon Circle */}
                     <div
-                      className="relative z-10 flex items-center justify-center w-12 h-12 sm:w-10 sm:h-14 rounded-full shrink-0 ring-4 ring-white shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:shadow-[#6CB52D]/40 group-hover:scale-110"
+                      className="relative z-10 flex items-center justify-center w-12 h-12 ml-[-10px] sm:w-14 sm:h-14 rounded-full shrink-0 ring-4 ring-white shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:shadow-[#6CB52D]/40 group-hover:scale-110"
                       style={{ backgroundColor: BRAND_GREEN }}
                     >
                       <Icon

@@ -37,7 +37,7 @@ export default function ResortSlider() {
         {/* Changed to 7xl for better proportions with 4 images */}
         {/* Section Heading */}
     <div className="text-center mb-12">
-     <a href="/projects/osiyan-habitat">         <h2 className="text-4xl md:text-6xl font-semibold font-manrope text-[#263659] mb-4">
+     <a href="/resources/our-videos/township" >         <h2 className="text-4xl md:text-6xl font-semibold font-manrope text-[#263659] mb-4">
             Infra Development @{" "}
             <span className="text-[#263659]">Osiyan Habitat</span>
           </h2>
