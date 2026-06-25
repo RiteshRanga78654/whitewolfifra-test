@@ -14,7 +14,7 @@ import { Play, X, Clock, Film, Volume2, VolumeX, Calendar, ChevronRight } from '
 
 const featuredVideo = {
   id: "feat-1",
-  title: "The White Wolf Anthem",
+  title: "White Wolf Infra",
   subtitle: "Brand Film",
   duration: "3:45",
   videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
@@ -23,160 +23,160 @@ const featuredVideo = {
 
 // Scalable JSON structure: months → weeks → videos
 const monthlyData = [
-  {
-    id: "apr",
-    label: "April",
-    short: "Apr",
-    weeks: [
-      {
-        id: "apr-w1",
-        label: "Week 1",
-        range: "Apr 1 – 7",
-        videos: [
-          {
-            id: "apr-w1-v1",
-            title: "Site Foundation Work Begins",
-            category: "Construction Update",
-            duration: "4:10",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-          {
-            id: "apr-w1-v2",
-            title: "Soil Testing & Survey",
-            category: "Site Progress",
-            duration: "2:55",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-        ],
-      },
-      {
-        id: "apr-w2",
-        label: "Week 2",
-        range: "Apr 8 – 14",
-        videos: [
-          {
-            id: "apr-w2-v1",
-            title: "Pillar Construction Phase 1",
-            category: "Construction Update",
-            duration: "6:30",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-        ],
-      },
-      {
-        id: "apr-w3",
-        label: "Week 3",
-        range: "Apr 15 – 21",
-        videos: [
-          {
-            id: "apr-w3-v1",
-            title: "Aerial View — April Progress",
-            category: "Aerial Walkthrough",
-            duration: "3:20",
-            videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
-          },
-          {
-            id: "apr-w3-v2",
-            title: "Structural Review Meeting",
-            category: "Official Update",
-            duration: "8:00",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-        ],
-      },
-      {
-        id: "apr-w4",
-        label: "Week 4",
-        range: "Apr 22 – 30",
-        videos: [
-          {
-            id: "apr-w4-v1",
-            title: "End of April Site Recap",
-            category: "Monthly Recap",
-            duration: "5:45",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: "may",
-    label: "May",
-    short: "May",
-    weeks: [
-      {
-        id: "may-w1",
-        label: "Week 1",
-        range: "May 1 – 7",
-        videos: [
-          {
-            id: "may-w1-v1",
-            title: "RERA Approval Received",
-            category: "Official HRERA Certification",
-            duration: "5:20",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-          {
-            id: "may-w1-v2",
-            title: "May Kickoff — Ground Activity",
-            category: "Construction Update",
-            duration: "3:40",
-            videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
-          },
-        ],
-      },
-      {
-        id: "may-w2",
-        label: "Week 2",
-        range: "May 8 – 14",
-        videos: [
-          {
-            id: "may-w2-v1",
-            title: "Slab Work Commences",
-            category: "Construction Update",
-            duration: "7:15",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-        ],
-      },
-      {
-        id: "may-w3",
-        label: "Week 3",
-        range: "May 15 – 21",
-        videos: [
-          {
-            id: "may-w3-v1",
-            title: "Drone Footage — Mid May",
-            category: "Aerial Walkthrough",
-            duration: "4:00",
-            videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
-          },
-          {
-            id: "may-w3-v2",
-            title: "Investor Site Visit Highlights",
-            category: "Event Recap",
-            duration: "9:30",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-        ],
-      },
-      {
-        id: "may-w4",
-        label: "Week 4",
-        range: "May 22 – 31",
-        videos: [
-          {
-            id: "may-w4-v1",
-            title: "New Launch in Sector 27, Jhajjar",
-            category: "Osiyan Habitat Launch",
-            duration: "12:15",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
-          },
-        ],
-      },
-    ],
-  },
+  // {
+  //   id: "apr",
+  //   label: "April",
+  //   short: "Apr",
+  //   weeks: [
+  //     {
+  //       id: "apr-w1",
+  //       label: "Week 1",
+  //       range: "Apr 1 – 7",
+  //       videos: [
+  //         {
+  //           id: "apr-w1-v1",
+  //           title: "Site Foundation Work Begins",
+  //           category: "Construction Update",
+  //           duration: "4:10",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //         {
+  //           id: "apr-w1-v2",
+  //           title: "Soil Testing & Survey",
+  //           category: "Site Progress",
+  //           duration: "2:55",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "apr-w2",
+  //       label: "Week 2",
+  //       range: "Apr 8 – 14",
+  //       videos: [
+  //         {
+  //           id: "apr-w2-v1",
+  //           title: "Pillar Construction Phase 1",
+  //           category: "Construction Update",
+  //           duration: "6:30",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "apr-w3",
+  //       label: "Week 3",
+  //       range: "Apr 15 – 21",
+  //       videos: [
+  //         {
+  //           id: "apr-w3-v1",
+  //           title: "Aerial View — April Progress",
+  //           category: "Aerial Walkthrough",
+  //           duration: "3:20",
+  //           videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
+  //         },
+  //         {
+  //           id: "apr-w3-v2",
+  //           title: "Structural Review Meeting",
+  //           category: "Official Update",
+  //           duration: "8:00",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "apr-w4",
+  //       label: "Week 4",
+  //       range: "Apr 22 – 30",
+  //       videos: [
+  //         {
+  //           id: "apr-w4-v1",
+  //           title: "End of April Site Recap",
+  //           category: "Monthly Recap",
+  //           duration: "5:45",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "may",
+  //   label: "May",
+  //   short: "May",
+  //   weeks: [
+  //     {
+  //       id: "may-w1",
+  //       label: "Week 1",
+  //       range: "May 1 – 7",
+  //       videos: [
+  //         {
+  //           id: "may-w1-v1",
+  //           title: "RERA Approval Received",
+  //           category: "Official HRERA Certification",
+  //           duration: "5:20",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //         {
+  //           id: "may-w1-v2",
+  //           title: "May Kickoff — Ground Activity",
+  //           category: "Construction Update",
+  //           duration: "3:40",
+  //           videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "may-w2",
+  //       label: "Week 2",
+  //       range: "May 8 – 14",
+  //       videos: [
+  //         {
+  //           id: "may-w2-v1",
+  //           title: "Slab Work Commences",
+  //           category: "Construction Update",
+  //           duration: "7:15",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "may-w3",
+  //       label: "Week 3",
+  //       range: "May 15 – 21",
+  //       videos: [
+  //         {
+  //           id: "may-w3-v1",
+  //           title: "Drone Footage — Mid May",
+  //           category: "Aerial Walkthrough",
+  //           duration: "4:00",
+  //           videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
+  //         },
+  //         {
+  //           id: "may-w3-v2",
+  //           title: "Investor Site Visit Highlights",
+  //           category: "Event Recap",
+  //           duration: "9:30",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       id: "may-w4",
+  //       label: "Week 4",
+  //       range: "May 22 – 31",
+  //       videos: [
+  //         {
+  //           id: "may-w4-v1",
+  //           title: "New Launch in Sector 27, Jhajjar",
+  //           category: "Osiyan Habitat Launch",
+  //           duration: "12:15",
+  //           videoSrc: "/assets/videos/fill-pillar.mp4",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     id: "jun",
     label: "June",
@@ -192,7 +192,7 @@ const monthlyData = [
             title: "June Site Walkthrough",
             category: "Construction Update",
             duration: "5:00",
-            videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
+            videoSrc: "/assets/videos/fill-pillar.mp4",
           },
         ],
       },
@@ -203,32 +203,34 @@ const monthlyData = [
         videos: [
           {
             id: "jun-w2-v1",
-            title: "Rooftop Progress Update",
+            title: "Pillar Progress",
             category: "Construction Update",
             duration: "6:10",
-            videoSrc: "/assets/videos/fill-pillar.mp4",
+            videoSrc: "/assets/videos/fill.mp4",
           },
-          {
-            id: "jun-w2-v2",
-            title: "Sales Team on Ground",
-            category: "Team Update",
-            duration: "3:25",
-            videoSrc: "/assets/videos/second_aerial_cinematic_vid.mp4",
-          },
+
         ],
       },
       {
         id: "jun-w3",
         label: "Week 3",
         range: "Jun 15 – 21",
-        videos: [],
+        videos: [
+            {
+            id: "jun-w3-v1",
+            title: "Road & Infrastructure Update",
+            category: "Construction Update",
+            duration: "1:09",
+            videoSrc: "/assets/gallery/june3week.mp4",
+          },
+        ],
       },
-      {
-        id: "jun-w4",
-        label: "Week 4",
-        range: "Jun 22 – 30",
-        videos: [],
-      },
+      // {
+      //   id: "jun-w4",
+      //   label: "Week 4",
+      //   range: "Jun 22 – 30",
+      //   videos: [],
+      // },
     ],
   },
 ];
@@ -423,8 +425,8 @@ function GridCard({ video, onClick }) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function MonthlySection({ onVideoClick }) {
-  const [activeMonth, setActiveMonth] = useState(monthlyData[2].id); // default: June
-  const [activeWeek, setActiveWeek] = useState(monthlyData[2].weeks[0].id);
+  const [activeMonth, setActiveMonth] = useState(monthlyData[0].id); // default: June
+  const [activeWeek, setActiveWeek] = useState(monthlyData[0].weeks[0].id);
 
   const currentMonth = monthlyData.find(m => m.id === activeMonth);
   const currentWeek = currentMonth?.weeks.find(w => w.id === activeWeek);
