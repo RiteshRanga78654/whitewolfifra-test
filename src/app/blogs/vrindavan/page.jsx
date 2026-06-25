@@ -50,136 +50,136 @@ const page = () => {
     },
   ];
 
-  const timelineItems = [
-    {
-      id: 1,
-      icon: Eye,
-      title: "Wellness Experiences",
-      description:
-        "Your villa's value grows steadily as the community develops.",
-    },
-    {
-      id: 2,
-      icon: House,
-      title: "Nature & Outdoor Living",
-      description:
-        "Attend in-person visits to evaluate spaces, features and overall lifestyle compatibility carefully",
-    },
-    {
-      id: 3,
-      icon: Home,
-      title: "Living Comforts",
-      description:
-        "Enjoy 21 complimentary nights each year, along with privileged rates on wellness treatments.",
-    },
-    {
-      id: 4,
-      icon: Percent,
-      title: "Leisure & Community",
-      description:
-        "Get special pricing on all treatments and F&B during your stays.",
-    },
-    {
-      id: 5,
-      icon: Maximize,
-      title: "Recreational Activities",
-      description:
-        "Ownership via sales deed and perpetual rights, fully secured for you.",
-    },
-  ];
+ const timelineItems = [
+  {
+    id: 1,
+    icon: Eye,
+    title: "Spiritual Living",
+    description:
+      "Experience peaceful living just minutes away from the sacred temples of Vrindavan, surrounded by divine energy.",
+  },
+  {
+    id: 2,
+    icon: House,
+    title: "Green & Serene Environment",
+    description:
+      "Wake up to lush landscapes, fresh air, and beautifully designed green spaces that promote a healthy lifestyle.",
+  },
+  {
+    id: 3,
+    icon: Home,
+    title: "Premium Villa Lifestyle",
+    description:
+      "Enjoy thoughtfully designed villas with modern amenities, spacious interiors, and exceptional comfort for your family.",
+  },
+  {
+    id: 4,
+    icon: Percent,
+    title: "High Investment Potential",
+    description:
+      "Benefit from Vrindavan's rapidly growing real estate market with strong appreciation and excellent future returns.",
+  },
+  {
+    id: 5,
+    icon: Maximize,
+    title: "World-Class Amenities",
+    description:
+      "Access landscaped gardens, clubhouse, meditation zones, children's play areas, and recreational facilities within the community.",
+  },
+];
 
-  const benefits = [
-    {
-      title: "Yield & Appreciation",
-      description:
-        "Capitalize on steady asset growth and premium rental yields as our ultra-luxury villa estates appreciate.",
-      icon: (
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          className="w-6 h-6"
-        >
-          <path d="M3 21h18" strokeLinecap="round" />
-          <path
-            d="M5 21V9l7-5 7 5v12"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path d="M9 21v-6h6v6" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M9 11h.01M12 11h.01M15 11h.01" strokeLinecap="round" />
-        </svg>
-      ),
-    },
-    {
-      title: "Bespoke Site Experiences",
-      description:
-        "Immerse yourself in our landscapes with guided, private estate viewings designed around your personal itinerary.",
-      icon: (
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          className="w-6 h-6"
-        >
-          <rect x="4" y="3" width="9" height="18" rx="0.5" />
-          <rect x="13" y="8" width="7" height="13" rx="0.5" />
-          <path
-            d="M7 7h.01M10 7h.01M7 11h.01M10 11h.01M7 15h.01M10 15h.01"
-            strokeLinecap="round"
-          />
-          <path d="M16 12h.01M16 16h.01" strokeLinecap="round" />
-        </svg>
-      ),
-    },
-    {
-      title: "Signature Retreat Access",
-      description:
-        "Indulge in 21 complimentary annual nights at your estate alongside preferred access to elite wellness sanctuaries.",
-      icon: (
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          className="w-6 h-6"
-        >
-          <circle cx="9" cy="8" r="2.5" />
-          <circle cx="17" cy="9" r="2" />
-          <path d="M4 19c0-3 2.5-5 5-5s5 2 5 5" strokeLinecap="round" />
-          <path d="M14 14.5c2 .2 4 1.8 4 4.5" strokeLinecap="round" />
-        </svg>
-      ),
-    },
-    {
-      title: "Privileged Club Pricing",
-      description:
-        "Enjoy curated, members-only pricing across all estate dining options, lounges, and signature spa treatments.",
-      icon: (
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.4"
-          className="w-6 h-6"
-        >
-          <path
-            d="M14.5 6.5 18 3l1.5 1.5L16 8m-1.5-1.5L7 14l-1 3 3-1 7.5-7.5M14.5 6.5 16 8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M3 21l3-1 1-3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path d="M5 18l3 3" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      ),
-    },
-  ];
+const benefits = [
+  {
+    title: "Prime Location",
+    description:
+      "Strategically located in the heart of Vrindavan with seamless connectivity to Prem Mandir, Banke Bihari Temple, ISKCON, and major highways.",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        className="w-6 h-6"
+      >
+        <path d="M3 21h18" strokeLinecap="round" />
+        <path
+          d="M5 21V9l7-5 7 5v12"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path d="M9 21v-6h6v6" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M9 11h.01M12 11h.01M15 11h.01" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Luxury Lifestyle",
+    description:
+      "Experience premium villas surrounded by lush greenery, landscaped gardens, modern infrastructure, and world-class amenities.",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        className="w-6 h-6"
+      >
+        <rect x="4" y="3" width="9" height="18" rx="0.5" />
+        <rect x="13" y="8" width="7" height="13" rx="0.5" />
+        <path
+          d="M7 7h.01M10 7h.01M7 11h.01M10 11h.01M7 15h.01M10 15h.01"
+          strokeLinecap="round"
+        />
+        <path d="M16 12h.01M16 16h.01" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Spiritual Living",
+    description:
+      "Enjoy a peaceful lifestyle inspired by the divine atmosphere of Vrindavan, with temples, meditation spaces, and serene surroundings.",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        className="w-6 h-6"
+      >
+        <circle cx="9" cy="8" r="2.5" />
+        <circle cx="17" cy="9" r="2" />
+        <path d="M4 19c0-3 2.5-5 5-5s5 2 5 5" strokeLinecap="round" />
+        <path d="M14 14.5c2 .2 4 1.8 4 4.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Secure Investment",
+    description:
+      "Invest in one of Vrindavan's fastest-growing destinations with high appreciation potential, clear legal documentation, and 24×7 gated security.",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        className="w-6 h-6"
+      >
+        <path
+          d="M14.5 6.5 18 3l1.5 1.5L16 8m-1.5-1.5L7 14l-1 3 3-1 7.5-7.5M14.5 6.5 16 8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M3 21l3-1 1-3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path d="M5 18l3 3" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+  },
+];
 
   return (
     <div>
@@ -472,9 +472,9 @@ const page = () => {
         `}</style>
       </section>
 
-       <div className="w-full h-56 sm:h-64 md:h-70 overflow-hidden my-16">
+       <div className="w-full h-60 sm:h-64 md:h-90 overflow-hidden my-12">
         <img
-          src="/assets/blog/banner.png"
+          src="/assets/blog/vrindavan-banner.png"
           alt="Team"
           className="w-full h-full object-cover hover:grayscale-0 hover:scale-[1.30] transition-transform duration-[2000ms]"
         />

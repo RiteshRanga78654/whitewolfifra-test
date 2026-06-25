@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 
-// ---- Static project data (replace image with your real assets) ----
+// ---- Static project data (Uncommented name & location so they render correctly) ----
 const PROJECTS = [
   {
     id: "vista-al-valle",
@@ -34,14 +34,16 @@ const PROJECTS = [
 ];
 
 const SWIPE_THRESHOLD = 60;
-const AUTOPLAY_DELAY = 3500; // ms between auto-advances
+const AUTOPLAY_DELAY = 3500; 
 
 export default function ProjectsSlider() {
   const [index, setIndex] = useState(0);
-  // direction: +1 means moving forward (content flows right -> left)
   const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
   const timerRef = useRef(null);
+  
+  // Ref to prevent link trigger during a drag action
+  const isDraggingRef = useRef(false);
 
   const len = PROJECTS.length;
   const getIdx = (offset) => (index + offset + len) % len;
@@ -64,12 +66,32 @@ export default function ProjectsSlider() {
     setIndex((prev) => (prev - 1 + len) % len);
   }, [len]);
 
+  const handleDragStart = () => {
+    isDraggingRef.current = true;
+  };
+
   const handleDragEnd = (_, info) => {
+    // Small timeout ensures click event doesn't fire immediately right after drag ends
+    setTimeout(() => {
+      isDraggingRef.current = false;
+    }, 50);
+
     if (info.offset.x < -SWIPE_THRESHOLD) next();
     else if (info.offset.x > SWIPE_THRESHOLD) prev();
   };
 
-  // ---- Autoplay: right -> left continuous loop ----
+  const handleCardClick = (role, link) => {
+    // If the user was dragging, ignore the click
+    if (isDraggingRef.current) return;
+
+    if (role === "prev") prev();
+    else if (role === "next") next();
+    else if (role === "active") {
+      // Safely opens the project link in a new tab if it's the active slide
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
+  };
+
   useEffect(() => {
     if (isPaused) return;
     timerRef.current = setInterval(() => {
@@ -155,11 +177,9 @@ export default function ProjectsSlider() {
                 drag={isActive ? "x" : false}
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={0.6}
+                onDragStart={handleDragStart}
                 onDragEnd={handleDragEnd}
-                onClick={() => {
-                  if (role === "prev") prev();
-                  if (role === "next") next();
-                }}
+                onClick={() => handleCardClick(role, project.Link)}
               >
                 <SlideCard project={project} isActive={isActive} />
               </motion.div>
@@ -203,8 +223,10 @@ export default function ProjectsSlider() {
 
 function SlideCard({ project, isActive }) {
   return (
-    <div className="relative h-full w-full select-none">
-    <a href={project.Link} target="_blank" rel="noopener noreferrer">
+    <div className="relative h-full w-full select-none pointer-events-none">
+      {/* pointer-events-none makes sure child clicks bubble perfectly 
+        up to the parent motion.div without breaking drag physics.
+      */}
       <Image
         src={project.image}
         alt={project.name}
@@ -214,7 +236,6 @@ function SlideCard({ project, isActive }) {
         className="object-cover"
         priority={isActive}
       />
-    </a>
 
       {/* Bottom gradient for legibility */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
@@ -241,11 +262,9 @@ function SlideCard({ project, isActive }) {
         </div>
 
         {isActive && (
-       <a href={project.Link} target="_blank" rel="noopener noreferrer">
           <button className="rounded-full bg-[#293659] px-5 py-2.5 text-sm font-medium text-[#fff] transition-transform hover:scale-105">
             Know More
           </button>
-        </a>
         )}
       </div>
     </div>

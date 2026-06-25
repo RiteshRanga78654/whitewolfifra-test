@@ -19,26 +19,26 @@ export default function AmenitiesSection() {
   // State to track how many items to show (Initialized to 18 to fit all data)
   const [benefitsCount, setBenefitsCount] = useState(15);
 
-  const locationBenefits = [
-    { id: 1, icon: Sparkles, title: "Prem Mandir", time: "5 MIN" },
-    { id: 2, icon: Home, title: "Banke Bihari Mandir", time: "10 MIN" },
-    { id: 3, icon: Building2, title: "ISKCON Vrindavan", time: "6 MIN" },
-    { id: 4, icon: Sparkles, title: "Chandrodaya Mandir", time: "4 MIN" },
-    { id: 5, icon: Milestone, title: "Yamuna Expressway", time: "12 MIN" },
-    { id: 6, icon: Train, title: "Vrindavan Station", time: "8 MIN" },
-    { id: 7, icon: Train, title: "Mathura Junction", time: "25 MIN" },
-    { id: 8, icon: Compass, title: "Nidhivan", time: "12 MIN" },
-    { id: 9, icon: MapPin, title: "Mata Vaishno Devi Dham", time: "7 MIN" },
-    { id: 10, icon: Home, title: "Radha Raman Mandir", time: "12 MIN" },
-    { id: 11, icon: Building2, title: "Sri Krishna Janmabhoomi", time: "22 MIN" },
-    { id: 12, icon: Compass, title: "Gवर्धन Hill (Govardhan)", time: "40 MIN" },
-    { id: 13, icon: MapPin, title: "Radha Kund", time: "35 MIN" },
-    { id: 14, icon: Car, title: "National Highway 19 (NH2)", time: "10 MIN" },
-    { id: 15, icon: Building2, title: "Nayati Multi-Specialty Hospital", time: "15 MIN" },
-    { id: 16, icon: Sparkles, title: "Gita Mandir Mathura", time: "20 MIN" },
-    { id: 17, icon: Home, title: "Dwarkadhish Mandir", time: "25 MIN" },
-    { id: 18, icon: Compass, title: "Barsana (Radha Rani Mandir)", time: "50 MIN" },
-  ];
+const locationBenefits = [
+  { id: 1, icon: Compass, title: "Mall Road", time: "10 MIN" },
+  { id: 2, icon: Home, title: "Jakhoo Temple", time: "15 MIN" },
+  { id: 3, icon: Sparkles, title: "The Ridge", time: "12 MIN" },
+  { id: 4, icon: Building2, title: "Christ Church", time: "12 MIN" },
+  { id: 5, icon: Milestone, title: "NH-5", time: "8 MIN" },
+  { id: 6, icon: Train, title: "Shimla Railway Station", time: "15 MIN" },
+  { id: 7, icon: Car, title: "Shimla ISBT", time: "18 MIN" },
+  { id: 8, icon: Compass, title: "Kufri", time: "25 MIN" },
+  { id: 9, icon: MapPin, title: "Naldehra Golf Course", time: "30 MIN" },
+  { id: 10, icon: Sparkles, title: "Mashobra", time: "20 MIN" },
+  { id: 11, icon: Building2, title: "Indira Gandhi Medical College", time: "18 MIN" },
+  { id: 12, icon: Compass, title: "Chail", time: "50 MIN" },
+  { id: 13, icon: MapPin, title: "Tattapani", time: "60 MIN" },
+  { id: 14, icon: Car, title: "Chandigarh–Shimla Highway", time: "10 MIN" },
+  { id: 15, icon: Building2, title: "Jubbarhatti Airport", time: "35 MIN" },
+  { id: 16, icon: Sparkles, title: "Green Valley", time: "18 MIN" },
+  { id: 17, icon: Home, title: "Tara Devi Temple", time: "25 MIN" },
+  { id: 18, icon: Compass, title: "Fagu", time: "35 MIN" },
+];
 
   return (
     <section className="relative py-20 px-4 overflow-hidden min-h-screen flex items-center">

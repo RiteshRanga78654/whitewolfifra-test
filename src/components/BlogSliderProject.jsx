@@ -10,11 +10,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const images = [
-"/assets/gallery/ori19.jpeg",
-"/assets/gallery/ori20.jpeg",
-"/assets/gallery/ori21.jpeg",
-"/assets/gallery/ori18.jpeg",
-"/assets/gallery/ori11.jpeg",
+  "/assets/gallery/ori19.jpeg",
+  "/assets/gallery/ori20.jpeg",
+  "/assets/gallery/ori21.jpeg",
+  "/assets/gallery/ori18.jpeg",
+  "/assets/gallery/ori11.jpeg",
 ];
 
 export default function ResortSlider() {
@@ -36,11 +36,12 @@ export default function ResortSlider() {
         {" "}
         {/* Changed to 7xl for better proportions with 4 images */}
         {/* Section Heading */}
-        <div className="text-center mb-12">
-       <h2 className="text-4xl md:text-6xl font-semibold font-manrope text-[#263659] mb-4">
-  Explore our premium <span className="text-[#263659]">Luxury Floors</span>
-</h2>
-
+    <div className="text-center mb-12">
+     <a href="/projects/osiyan-habitat">         <h2 className="text-4xl md:text-6xl font-semibold font-manrope text-[#263659] mb-4">
+            Infra Development @{" "}
+            <span className="text-[#263659]">Osiyan Habitat</span>
+          </h2>
+</a>
           <div className="h-1 w-20 bg-[#263659] mx-auto rounded-full"></div>
         </div>
         {/* Slider Container */}
